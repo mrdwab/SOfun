@@ -1,0 +1,26 @@
+\name{shuffler}
+\alias{shuffler}
+\title{Shuffle the elements of a vector}
+\usage{
+shuffler(inVec)
+}
+\arguments{
+  \item{inVec}{The input vector}
+}
+\value{
+A shuffled version of the input vector
+}
+\description{
+Shuffles the elements of a vector such that no single
+element is in the same place it was before.
+}
+\examples{
+shuffler(letters[1:10])
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/19898689/1270695}
+}
+

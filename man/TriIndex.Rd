@@ -1,0 +1,39 @@
+\name{TriIndex}
+\alias{TriIndex}
+\title{Get the row and column indices of upper and lower trianges of a matrix}
+\usage{
+TriIndex(Nrow, which = "lower")
+}
+\arguments{
+  \item{Nrow}{The number of rows}
+
+  \item{which}{Specify \code{which = "lower"} or
+  \code{which = "upper"}. Defaults to \code{"lower"}.}
+}
+\value{
+A two-column matrix.
+}
+\description{
+Given the number of rows in a symmetric matrix, calculate
+the row and column indices of the upper or lower triangles.
+}
+\note{
+A straightforward way to do this is to use
+\code{which(lower.tri(YourMatrix), arr.ind = TRUE)},
+however, this can be quite slow as the number of rows
+increases.
+}
+\examples{
+TriIndex(4)
+TriIndex(4, "upper")
+
+m <- matrix(0, nrow = 4, ncol = 4)
+which(lower.tri(m), arr.ind = TRUE)
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/20899060/1270695}
+}
+

@@ -1,0 +1,11 @@
+Package: SOfun
+Type: Package
+Title: Archives some of the functions I've written as answers to R questions on
+    Stack Overflow.
+Version: 1.0
+Date: 2014-02-09
+Author: Ananda Mahto
+Maintainer: Ananda Mahto <mrdwab@gmail.com>
+Description: Nothing special. A very incohesive collection of functions, that's
+    all.
+License: CC0.

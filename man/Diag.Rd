@@ -1,0 +1,30 @@
+\name{Diag}
+\alias{Diag}
+\title{Extract the values at the diagonal of a matrix}
+\usage{
+Diag(inMatrix)
+}
+\arguments{
+  \item{inMatrix}{The input matrix}
+}
+\value{
+A vector
+}
+\description{
+A faster version of \code{\link{diag}} (on larger matrices)
+.
+}
+\examples{
+set.seed(1)
+m <- matrix(rnorm(100), ncol = 10)
+
+Diag(m)
+diag(m)
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/20489737/1270695}
+}
+

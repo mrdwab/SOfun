@@ -1,0 +1,36 @@
+\name{vec2symmat}
+\alias{vec2symmat}
+\title{Creates a symmetric matrix from a vector}
+\usage{
+vec2symmat(invec, diag = 1, byrow = TRUE)
+}
+\arguments{
+  \item{invec}{The input vector}
+
+  \item{diag}{The value for the diagonal}
+
+  \item{byrow}{Logical. Whether the upper-triangle should
+  be filled in by row}
+}
+\value{
+A matrix
+}
+\description{
+Takes a vector and, if the vector is of the correct lenght
+to be made into a symmetric matrix, performs the
+conversion.
+}
+\examples{
+myvec <- c(-.55, -.48, .66, .47, -.38, -.46)
+vec2symmat(myvec)
+
+vec2symmat(1:15, diag = 0)
+vec2symmat(1:15, diag = 0, byrow = FALSE)
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/18598933/1270695}
+}
+

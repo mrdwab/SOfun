@@ -1,0 +1,44 @@
+\docType{package}
+\name{SOfun-package}
+\alias{SOfun}
+\alias{SOfun-package}
+\title{Functions written while answering Stack Overflow questions}
+\description{
+A collection of functions I've written while answering
+questions on Stack Overflow.
+}
+\details{
+\tabular{ll}{ Package: \tab SOfun\cr Type: \tab Package\cr
+Version: \tab 0.1.0\cr Date: \tab 2014-02-09\cr License:
+\tab CC0\cr }
+}
+\examples{
+adjCombos(letters[1:5])
+
+cvA <- c(12, 8, 11, 9); cvB <- c(NA, 7, NA, 10)
+completeVecs(cvA, cvB)
+
+fx <- c("Y", "Y", "Yes", "N", "No", "H")
+Factor(fx, list(Yes = c("Yes", "Y"), No = c("No", "N")))
+
+moveA <- letters[1:10]
+moveMe(moveA, "a last; b, e, g before d; c first; h after j")
+
+Riffle(1:6, "x")
+Riffle(1:6, c("x", "y"))
+
+set.seed(1)
+SampleToSum()
+
+shiftX <- c(1, 4, 5, 2, 3, 6, 7, 8, 10, 9)
+shifter()[shiftX]
+
+shuffler(letters[1:10])
+}
+\author{
+Ananda Mahto
+
+Maintainer: <ananda@mahto.info> Ananda Mahto
+}
+\keyword{package}
+

@@ -1,0 +1,56 @@
+\name{SampleToSum}
+\alias{SampleToSum}
+\title{Sample from a specific range with a target vector sum}
+\usage{
+SampleToSum(Target = 100, VecLen = 10, InRange = 1:100, Tolerance = 2,
+  showSum = TRUE)
+}
+\arguments{
+  \item{Target}{The value that the vector should \code{sum}
+  to}
+
+  \item{VecLen}{The required vector length}
+
+  \item{InRange}{The input range that values can be sampled
+  from}
+
+  \item{Tolerance}{A "buffer" for the \code{Target}
+  argument, allowing the resulting sum to be slightly
+  higher or slightly lower than specified.}
+
+  \item{showSum}{Logical. Should the resulting total be
+  shown?}
+}
+\value{
+A vector
+}
+\description{
+Takes a sample from a given range (for example, 1 to 100),
+and a specified resulting vector length (for example, 10),
+which add up to a specified value.
+}
+\note{
+There is a good chance that with certain settings, this
+will be VERY SLOW!
+}
+\examples{
+set.seed(1)
+SampleToSum()
+
+SampleToSum()
+
+SampleToSum(Tolerance = 0)
+
+SampleToSum(Tolerance = 0)
+
+set.seed(123)
+## You'll have to wait a few seconds here
+SampleToSum(Target = 1163, VecLen = 15, InRange = 50:150)
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/14687223/1270695}
+}
+

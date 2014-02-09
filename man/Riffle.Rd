@@ -1,0 +1,55 @@
+\name{Riffle}
+\alias{Riffle}
+\title{Interleaves values within matrices or vectors}
+\usage{
+Riffle(...)
+}
+\arguments{
+  \item{\dots}{The objects or values that need to be
+  interleaved.}
+}
+\value{
+A vector or a matrix depending on the input. If one or more
+input objects is a matrix, the result will also be a
+matrix.
+}
+\description{
+Mimics some of the behavior of the \code{Riffle} function
+(\url{http://reference.wolfram.com/mathematica/ref/Riffle.html})
+in Mathematica. For matrices, it interleaves the columns.
+For vectors, it interleaves differently according to
+whether the subsequent values are presented as separate
+values or whether they are grouped with \code{c()}.
+}
+\details{
+It is expected that all matrices to be interleaved would
+have the same number of rows, though they may have
+differing numbers of columns. If they have differing
+numbers of columns, they are all made to conform to the
+same dimension before proceeding by recycling the existing
+columns.
+}
+\examples{
+m1 <- matrix(1:9, nrow = 3, ncol = 3)
+m2 <- matrix(letters[1:9], nrow = 3, ncol = 3)
+
+Riffle(m1, m2)
+Riffle(m1, "||", m2)
+
+m3 <- matrix(LETTERS[1:6], nrow = 3, ncol = 2)
+
+Riffle(m1, m2, m3)
+
+## Just vectors
+
+Riffle(1:6, "x")
+Riffle(1:6, "x", "y")
+Riffle(1:6, c("x", "y"))
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/q/21347207/1270695}
+}
+

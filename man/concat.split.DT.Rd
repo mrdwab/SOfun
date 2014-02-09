@@ -1,0 +1,67 @@
+\name{concat.split.DT}
+\alias{concat.split.DT}
+\title{Split concatenated cells in a \code{data.frame} or a \code{data.table}}
+\usage{
+concat.split.DT(dataset, splitcols, sep, drop = TRUE, dotsub = "|")
+}
+\arguments{
+  \item{dataset}{The input \code{data.frame} or
+  \code{data.table}.}
+
+  \item{splitcols}{The columns that need to be split up.}
+
+  \item{sep}{The character that serves as a delimiter
+  within the columns that need to be split up.}
+
+  \item{drop}{Logical. Should the original columns be
+  dropped? Defaults to \code{TRUE}.}
+
+  \item{dotsub}{The character that should be substituted as
+  a delimiter \emph{if \code{sep = "."}}. \code{fread} does
+  not seem to work nicely with \code{sep = "."}, so it
+  needs to be substituted. By default, this function will
+  substitute \code{"."} with \code{"|"}.}
+}
+\value{
+A \code{data.table}.
+}
+\description{
+A variation of the \code{concat.split} family of functions
+designed for large rectangular datasets.
+}
+\details{
+While the general \code{concat.split} functions are able to
+handle "unbalanced" datasets (for example, where the number
+of fields in a given column might differ from row to row)
+because of the nature of \code{fread} from the "data.table"
+package, this function does not support such data types.
+}
+\examples{
+small_file <- system.file("concatDT.csv", package = "SOfun")
+small_data <- read.csv(small_file)
+dim(small_data)
+head(small_data)
+out <- concat.split.DT(small_data,
+                       splitcols = c("VARIABLE", "VAR2", "VAR3", "VAR4"),
+                       sep = "_", drop = TRUE)
+out
+
+\dontrun{
+## Make a much bigger dataset
+big_data <- small_data[rep(rownames(small_data),
+                           1500000/nrow(small_data)), ]
+dim(big_data)
+system.time(big_out <- concat.split.DT(big_data,
+                                       splitcols = c("VARIABLE", "VAR2",
+                                                     "VAR3", "VAR4"),
+                                       sep = "_", drop = TRUE))
+big_out
+}
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/19231054/1270695}
+}
+

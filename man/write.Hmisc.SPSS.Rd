@@ -1,0 +1,59 @@
+\name{write.Hmisc.SPSS}
+\alias{write.Hmisc.SPSS}
+\title{Write an Hmisc data.frame with labels to SPSS}
+\usage{
+write.Hmisc.SPSS(data, datafile, codefile)
+}
+\arguments{
+  \item{data}{The input data.frame}
+
+  \item{datafile}{The name for the resulting SPSS data
+  file}
+
+  \item{codefile}{The name for the resulting SPSS code
+  file}
+}
+\value{
+Two files will be created in your working directory: a
+script file and a data file that can be used with SPSS
+}
+\description{
+The Hmisc package lets you assign labels to data. This
+information is not included when using write.spss from the
+"foreign" package. This function tries to address that.
+}
+\examples{
+df <- data.frame(id = c(1:6),
+                 p.code = c(1, 5, 4, NA, 0, 5),
+                 p.label = c('Optometrists', 'Nurses',
+                             'Financial analysts', '<NA>',
+                             '0', 'Nurses'),
+                 foo = LETTERS[1:6])
+# Add some variable labels using label from the Hmisc package
+library(Hmisc)
+label(df) <- "Sweet sweet data"
+label(df$id) <- "id blahblah"
+label(df$p.label) <- "Profession with human readable information"
+label(df$p.code) <- "Profession code"
+label(df$foo) <- "Variable label for variable x.var"
+# modify the name of one varibe to see what happens when exported
+names(df)[4] <- "New crazy name for 'foo'"
+
+df
+
+x <- getwd()
+setwd(tempdir())
+list.files()
+write.Hmisc.SPSS(df, "df.sav", "df.sps")
+cat(readLines("df.sav"), sep = "\\n")
+cat(readLines("df.sps"), sep = "\\n")
+file.remove("df.sav", "df.sps")
+setwd(x)
+}
+\author{
+Ananda Mahto. Includes code from Chuck Cleland
+}
+\references{
+\url{http://stackoverflow.com/a/10261534/1270695}
+}
+

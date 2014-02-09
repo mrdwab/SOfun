@@ -1,0 +1,40 @@
+\name{completeVecs}
+\alias{completeVecs}
+\title{Extract the \code{complete.cases} for a set of vectors}
+\usage{
+completeVecs(...)
+}
+\arguments{
+  \item{\dots}{The vectors that need to be combined.}
+}
+\value{
+A matrix with the same number of columns as there are input
+vectors.
+}
+\description{
+Takes vectors as input and outputs a matrix of the complete
+cases across these vectors.
+}
+\note{
+Short vectors are recycled without warnings. If your
+vectors are different lengths, you should decide whether
+this is a desirable behavior or not before using this
+function.
+}
+\examples{
+A <- c(12, 8, 11, 9, NA, NA, NA)
+B <- c(NA, 7, NA, 10, NA, 11, 9)
+
+completeVecs(A, B)
+
+C <- c(1, 2, NA)
+
+completeVecs(A, B, C)
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/20146003/1270695}
+}
+

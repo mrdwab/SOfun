@@ -1,0 +1,37 @@
+\name{ftable2df}
+\alias{ftable2df}
+\title{Convert an \code{ftable} object to a \code{data.frame}}
+\usage{
+ftable2df(mydata)
+}
+\arguments{
+  \item{mydata}{The input \code{ftable} object}
+}
+\value{
+A \code{data.frame}
+}
+\description{
+While convenient methods exist for converting \code{table}s
+and other objects to \code{data.frame}s, such methods do
+not exist for converting an \code{ftable} to a
+\code{data.frame}. An \code{ftable} is essentially a
+\code{matrix} with \code{attributes} for the rows and
+columns, which can be nested.
+}
+\note{
+%% ~~further notes~~
+}
+\examples{
+x <- ftable(Titanic, row.vars = 1:3)
+
+x
+
+ftable2df(x)
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/11143126/1270695}
+}
+

@@ -1,0 +1,49 @@
+\name{Factor}
+\alias{Factor}
+\title{Factor vectors with multiple levels}
+\usage{
+Factor(invec, levels = list(), store = TRUE, ...)
+}
+\arguments{
+  \item{invec}{A \code{vector} that needs to be factored.}
+
+  \item{levels}{A named \code{list} of the levels. The
+  \code{name} is the level and the values are what should
+  be mapped to those levels.}
+
+  \item{store}{Logical. Should the input values be stored
+  as an attribute?}
+
+  \item{\dots}{Additional arguments to \code{factor}.}
+}
+\value{
+A factored variable with \code{class} of \code{factor} and
+\code{Factor}, optionally with an \code{attribute} of
+\code{"Input"} which stores the original input values.
+}
+\description{
+\code{\link{factor}} does not let you use duplicated levels
+nicely. It results in an ugly warning message and you need
+to use \code{\link{droplevels}} to get the desired output.
+}
+\details{
+The "solution" is to first factor the vector, and then use
+a named \code{list} with the \code{\link{levels}} function.
+This function is a wrapper around those steps.
+}
+\examples{
+x <- c("Y", "Y", "Yes", "N", "No", "H")
+Factor(x, list(Yes = c("Yes", "Y"), No = c("No", "N")))
+Factor(x, list(Yes = c("Yes", "Y"), No = c("No", "N")), FALSE)
+Factor(x, list(No = c("No", "N"), Yes = c("Yes", "Y")), ordered = TRUE)
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/19410249/1270695}
+}
+\seealso{
+\code{\link{factor}}, \code{\link{levels}}
+}
+

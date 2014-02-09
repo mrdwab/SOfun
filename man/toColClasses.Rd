@@ -1,0 +1,54 @@
+\name{toColClasses}
+\alias{toColClasses}
+\title{Change the column classes of variables in a \code{data.frame}}
+\usage{
+toColClasses(inDF, colClasses)
+}
+\arguments{
+  \item{inDF}{The source \code{data.frame}.}
+
+  \item{colClasses}{A character vector of the desired
+  column classes. This should be the same length as the
+  number of columns in the \code{data.frame}. If no change
+  is desired, use \code{""}.}
+}
+\value{
+A \code{data.frame}.
+}
+\description{
+Change the column classes of variables in a
+\code{data.frame} that has already been read into your
+workspace.
+}
+\note{
+This function has only been tested with a very small set of
+the \code{as.*} functions.
+}
+\examples{
+mydf <- data.frame(
+  a = c(" 1"," 2", " 3"),
+  b = c("a","b","c"),
+  c = c(" 1.0", "NA", " 2.0"),
+  d = c(" 1", "B", "2"),
+  e = c(1, 0, 1))
+
+mydf
+str(mydf)
+
+x <- toColClasses(mydf, c("as.integer", "", "as.numeric",
+                          "as.factor", "as.logical"))
+x
+str(x)
+
+y <- toColClasses(mydf, c("as.integer", "", "as.numeric",
+                          "as.character", "as.logical"))
+y
+str(y)
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/18893672/1270695}
+}
+

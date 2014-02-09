@@ -1,0 +1,30 @@
+\name{clc}
+\alias{clc}
+\title{Clear your workspace}
+\usage{
+clc(all = FALSE)
+}
+\arguments{
+  \item{all}{Logical. Should hidden objects also be
+  removed? Defaults to \code{FALSE}.}
+}
+\value{
+Nothing
+}
+\description{
+A slightly more elaborate version of \code{rm(list = ls())}
+to clear your workspace.
+}
+\examples{
+\dontrun{
+clc()      # Will not affect hidden files
+clc(TRUE)  # Will affect hidden files
+}
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/20389913/1270695}
+}
+
