@@ -29,3 +29,5 @@ Functions I've written as answers to R questions on Stack Overflow. Destined to 
 1. `TrueSeq`
 1. `vec2symmat`
 1. `write.Hmisc.SPSS`
+
+Don't ask me why I did this.
