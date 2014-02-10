@@ -16,6 +16,7 @@ Functions I've written as answers to R questions on Stack Overflow. Destined to 
 1. `ftable2df`
 1. `getMyRows`
 1. `helpExtract`
+1. `letterRep`
 1. `makemeNA`
 1. `read.mtable`
 1. `Riffle`

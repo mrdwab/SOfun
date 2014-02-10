@@ -1,0 +1,28 @@
+\name{letterRep}
+\alias{letterRep}
+\title{"Wrap" the \code{letters} constant}
+\usage{
+letterRep(inRange)
+}
+\arguments{
+  \item{inRange}{The (numeric) input range.}
+}
+\value{
+A character vector.
+}
+\description{
+The \code{letterRep} function "wraps" the \code{letters}
+constant, making repeated letters unique by pasting
+characters together.
+}
+\examples{
+letterRep(60)
+letterRep(20:40)
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/a/21681824/1270695}
+}
+

@@ -24,6 +24,8 @@ Factor(fx, list(Yes = c("Yes", "Y"), No = c("No", "N")))
 moveA <- letters[1:10]
 moveMe(moveA, "a last; b, e, g before d; c first; h after j")
 
+letterRep(20:40)
+
 Riffle(1:6, "x")
 Riffle(1:6, c("x", "y"))
 
