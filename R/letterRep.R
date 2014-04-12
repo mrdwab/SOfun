@@ -1,6 +1,8 @@
 #' "Wrap" the \code{letters} constant
 #' 
-#' The \code{letterRep} function "wraps" the \code{letters} constant, making repeated letters unique by pasting characters together. 
+#' The \code{letterRep} function "wraps" the \code{letters} constant, making
+#' repeated letters unique by pasting characters together.
+#' 
 #' 
 #' @param inRange The (numeric) input range.
 #' @return A character vector.
