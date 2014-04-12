@@ -71,8 +71,6 @@ Riffle <- function(...) {
         })
       }
       NewDims <- vapply(x, dim, c(row = 1L, col = 1L))
-      print(NewDims)
-      print(x)
       A <- do.call(cbind, x)[, order(sequence(rep(NewDims["col", 1], ncol(NewDims))))]
     },
     allvec = {
