@@ -21,6 +21,7 @@ Functions I've written as answers to R questions on Stack Overflow. Destined to 
 1. `melt.wide`
 1. `moveMe`
 1. `naLast`
+1. `needleInHaystack`
 1. `read.mtable`
 1. `Riffle`
 1. `SampleToSum`

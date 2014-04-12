@@ -1,0 +1,34 @@
+\name{needleInHaystack}
+\alias{needleInHaystack}
+\title{Find a needle in a haystack...}
+\usage{
+needleInHaystack(findMe, findIn)
+}
+\arguments{
+  \item{findMe}{What are you looking for? A character
+  vector.}
+
+  \item{findIn}{Where are you looking for it? A character
+  vector.}
+}
+\value{
+A matrix with 1 indicating presence and 0 indicating
+absence.
+}
+\description{
+Find specified search patterns (in any order, not
+necessarily joined) in another vector of strings.
+}
+\examples{
+x <- c("cat", "dog", "rat", "far", "f*n", "god", "g*dn")
+y <- c("ar", "n*", "a", "zo")
+
+needleInHaystack(y, x)
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/q/22129542/1270695}
+}
+
