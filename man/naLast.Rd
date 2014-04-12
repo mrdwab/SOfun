@@ -1,0 +1,48 @@
+\name{naLast}
+\alias{naLast}
+\title{Move all \code{NA} values to the end of the rows or columns of a matrix}
+\usage{
+naLast(inmat, by = "row", outList = FALSE, fill = NA)
+}
+\arguments{
+  \item{inmat}{The input matrix.}
+
+  \item{by}{Should be either \code{"row"} or \code{"col"},
+  depending on if you want to shift non-\code{NA} values
+  left or up.}
+
+  \item{outList}{Logical. Do you just want a \code{list} of
+  the non-\code{NA} values? Defaults to \code{FALSE}.}
+
+  \item{fill}{While you're at it, do you want to replace
+  \code{NA} with some other value?}
+}
+\value{
+Either a \code{matrix} with the same dimensions as the
+input matrix or a \code{list} with the same number of rows
+or columns as the input matrix (depending on the choice
+made in \code{by}).
+}
+\description{
+Moves all of the \code{NA} values in the rows or columns of
+a matrix to the end of the respective rows or columns.
+}
+\examples{
+set.seed(1)
+m <- matrix(sample(25, 20, TRUE), ncol = 4,
+            dimnames = list(letters[1:5], LETTERS[1:4]))
+m[sample(prod(dim(m)), prod(dim(m)) * .6)] <- NA
+
+m
+
+naLast(m, by = "row")
+naLast(m, by = "col")
+naLast(m, by = "col", outList = TRUE)
+}
+\author{
+Ananda Mahto
+}
+\references{
+\url{http://stackoverflow.com/q/23008142/1270695}
+}
+
