@@ -1,6 +1,8 @@
 #' Find a needle in a haystack...
 #' 
-#' Find specified search patterns (in any order, not necessarily joined) in another vector of strings.
+#' Find specified search patterns (in any order, not necessarily joined) in
+#' another vector of strings.
+#' 
 #' 
 #' @param findMe What are you looking for? A character vector.
 #' @param findIn Where are you looking for it? A character vector.
