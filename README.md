@@ -15,6 +15,7 @@ Functions I've written as answers to R questions on Stack Overflow. Destined to 
 1. `findFirst`: Finds the position of the n<sup>th</sup> non-sequential specified value in a vector.
 1. `ftable2df`: Converts the output of `ftable()` to a `data.frame`.
 1. `getMyRows`: Extracts a range of rows from a `data.frame`.
+1. `GroupedMedian`: Calculates the median of grouped data.
 1. `helpExtract`: Extracts portions of R help files for use in Sweave or R-markdown documents.
 1. `letterRep`: Wraps the `letters` constant making unique values.
 1. `makemeNA`: Converts specific values in a `data.frame` into `NA`.

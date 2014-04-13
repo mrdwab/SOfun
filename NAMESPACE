@@ -1,5 +1,6 @@
 export(Diag)
 export(Factor)
+export(GroupedMedian)
 export(Riffle)
 export(SampleToSum)
 export(TriIndex)
