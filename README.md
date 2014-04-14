@@ -6,6 +6,7 @@ Functions I've written as answers to R questions on Stack Overflow. Destined to 
 1. `adjCombos`: Adjacent combinations.
 1. `almostComplete`: Like `complete.cases`, but more flexible.
 1. `appendMe`: Like `rbind()` but adds the source in the process.
+1. `CharNumSplit`: Splits strings like "ABC123" into "ABC" and "123" or strings like "123ABC" into "123" and "ABC".
 1. `clc`: Clear your workspace.
 1. `completeVecs`: Like `complete.cases()` but for vectors.
 1. `concat.split.DT`: Work in progress on an `fread()` approach to `concat.split()` from "splitstackshape".

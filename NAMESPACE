@@ -1,3 +1,4 @@
+export(CharNumSplit)
 export(Diag)
 export(Factor)
 export(GroupedMedian)
