@@ -40,7 +40,7 @@
 #' @export helpExtract
 helpExtract <- function(Function, section = "Usage", type = "m_code", ...) {
   A <- deparse(substitute(Function))
-  x <- capture.output(tools:::Rd2txt(utils:::.getHelpFile(help(A, ...)),
+  x <- capture.output(tools:::Rd2txt(utils:::.getHelpFile(utils::help(A, ...)),
                                      options = list(sectionIndent = 0)))
   B <- grep("^_", x)                    ## section start lines
   x <- gsub("_\b", "", x, fixed = TRUE) ## remove "_\b"
