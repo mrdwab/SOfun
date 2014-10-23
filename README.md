@@ -9,7 +9,7 @@ Functions I've written as answers to R questions on Stack Overflow. Destined to 
 1. `CharNumSplit`: Splits strings like "ABC123" into "ABC" and "123" or strings like "123ABC" into "123" and "ABC".
 1. `clc`: Clear your workspace.
 1. `completeVecs`: Like `complete.cases()` but for vectors.
-1. `concat.split.DT`: Work in progress on an `fread()` approach to `concat.split()` from "splitstackshape".
+1. <s>`concat.split.DT`: Work in progress on an `fread()` approach to `concat.split()` from "splitstackshape".</s> Now part of "splitstackshape" (V1.4.0 and above).
 1. `Diag`: A faster version of `diag()`.
 1. `expandRows`: Expand the rows of a `data.frame` by a column in the `data.frame` or by a specified vector.
 1. `Factor`: Enhanced version of `factor()` that allows duplicated `levels` to be used more directly.
