@@ -2,7 +2,7 @@
 % Please edit documentation in R/melt.wide.R
 \name{melt.wide}
 \alias{melt.wide}
-\title{melt wide data.frames into long data.frames}
+\title{Melt Wide data.tables into Long data.tables}
 \usage{
 \method{melt}{wide}(data, id.vars, new.names)
 }
@@ -14,11 +14,11 @@
 \item{new.names}{The new names for the resulting columns}
 }
 \value{
-A long \code{data.frame}
+A long \code{data.table}
 }
 \description{
-Reshapes double and tripple wide \code{data.frame}s to long
-\code{data.frame}s
+Reshapes double and tripple wide \code{data.table}s to long
+\code{data.table}s
 }
 \examples{
 
@@ -40,7 +40,7 @@ triplewide
 triplewide.long <- melt.wide(triplewide, id.vars="ID",
                             new.names=c("week", "day", "trial"))
 triplewide.long
-dcast(triplewide.long, ID + week + day ~ trial)
+data.table::dcast(triplewide.long, ID + week + day ~ trial)
 
 }
 \author{

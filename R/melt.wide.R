@@ -1,13 +1,13 @@
-#' melt wide data.frames into long data.frames
+#' Melt Wide data.tables into Long data.tables
 #' 
-#' Reshapes double and tripple wide \code{data.frame}s to long
-#' \code{data.frame}s
+#' Reshapes double and tripple wide \code{data.table}s to long
+#' \code{data.table}s
 #' 
 #' 
 #' @param data The input \code{data.frame}
 #' @param id.vars ID variables
 #' @param new.names The new names for the resulting columns
-#' @return A long \code{data.frame}
+#' @return A long \code{data.table}
 #' @author Ananda Mahto
 #' @references \url{http://stackoverflow.com/a/10170630/1270695}
 #' @examples
@@ -30,15 +30,12 @@
 #' triplewide.long <- melt.wide(triplewide, id.vars="ID",
 #'                             new.names=c("week", "day", "trial"))
 #' triplewide.long
-#' dcast(triplewide.long, ID + week + day ~ trial)
+#' data.table::dcast(triplewide.long, ID + week + day ~ trial)
 #' 
 #' @export melt.wide
 melt.wide = function(data, id.vars, new.names) {
-  require(reshape2)
-  require(stringr)
-  data.melt = melt(data, id.vars=id.vars)
-  new.vars = data.frame(do.call(
-    rbind, str_extract_all(data.melt$variable, "[0-9]+")))
-  names(new.vars) = new.names
-  cbind(data.melt, new.vars)
+  if (!data.table::is.data.table(data)) data <- data.table::as.data.table(data)
+  data.melt = data.table::melt(data, id.vars=id.vars)
+  data.melt[, (new.names) := data.table::transpose(
+    stringr::str_extract_all(variable, "[0-9]+"))][]
 }
