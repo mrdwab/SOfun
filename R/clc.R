@@ -18,5 +18,5 @@
 #' 
 #' @export clc
 clc <- function(all = FALSE) {
-  rm(list = ls(.GlobalEnv, all = all), envir = .GlobalEnv)
+  rm(list = ls(.GlobalEnv, all.names = all), envir = .GlobalEnv)
 }

@@ -56,7 +56,7 @@ write.Hmisc.SPSS = function(data, datafile, codefile) {
     # https://stat.ethz.ch/pipermail/r-help/2006-January/085941.html
     adQuote <- function(x){paste("\"", x, "\"", sep = "")}
     dfn <- lapply(df, function(x) if (is.factor(x)) as.numeric(x) else x)
-    write.table(dfn, file = datafile, row = FALSE, col = FALSE)
+    write.table(dfn, file = datafile, row.names = FALSE, col.names = FALSE)
     if(is.null(attributes(df)$variable.labels)) varlabels <- names(df) 
     else varlabels <- attributes(df)$variable.labels
     if (is.null(varnames)) {
