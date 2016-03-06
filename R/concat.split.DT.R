@@ -47,9 +47,8 @@
 #' 
 #' @export concat.split.DT
 concat.split.DT <- function(dataset, splitcols, sep, drop = TRUE, dotsub = "|") {
-  require(data.table)
   if (is.numeric(splitcols)) splitcols <- names(dataset)[splitcols]
-  if (!is.data.table(dataset)) dataset <- data.table(dataset)
+  if (!data.table::is.data.table(dataset)) dataset <- data.table::as.data.table(dataset)
   if (sep == ".") {
     dataset[, (splitcols) := gsub(".", dotsub, get(splitcols), fixed = TRUE)]
     sep <- dotsub
@@ -59,8 +58,8 @@ concat.split.DT <- function(dataset, splitcols, sep, drop = TRUE, dotsub = "|") 
     x <- tempfile()
     if (!is.character(dataset[[Z]])) writeLines(as.character(dataset[[Z]]), x)
     else writeLines(dataset[[Z]], x)
-    Split <- fread(x, sep = sep, header = FALSE)
-    setnames(Split, paste(Z, seq_along(Split), sep = "_"))
+    Split <- data.table::fread(x, sep = sep, header = FALSE)
+    data.table::setnames(Split, paste(Z, seq_along(Split), sep = "_"))
     Split
   }))
   
