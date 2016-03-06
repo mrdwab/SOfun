@@ -54,7 +54,4 @@ cat(helpExtract(cor, type = "m_text", section="Description"))
 \author{
 Ananda Mahto
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
 

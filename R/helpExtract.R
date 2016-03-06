@@ -28,7 +28,6 @@
 #' @param \dots Other arguments passed to \code{getHelpFile}.
 #' @return A character vector to be used in a Sweave or R-markdown document.
 #' @author Ananda Mahto
-#' @references %% ~put references to the literature/web site here ~
 #' @examples
 #' 
 #' cat(helpExtract(cor), sep = "\n")
@@ -40,7 +39,7 @@
 #' @export helpExtract
 helpExtract <- function(Function, section = "Usage", type = "m_code", ...) {
   A <- deparse(substitute(Function))
-  x <- capture.output(tools:::Rd2txt(utils:::.getHelpFile(utils::help(A, ...)),
+  x <- capture.output(tools::Rd2txt(utils:::.getHelpFile(utils::help(A, ...)),
                                      options = list(sectionIndent = 0)))
   B <- grep("^_", x)                    ## section start lines
   x <- gsub("_\b", "", x, fixed = TRUE) ## remove "_\b"

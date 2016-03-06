@@ -2,7 +2,7 @@
 % Please edit documentation in R/tidyHTML.R
 \name{tidyHTML}
 \alias{tidyHTML}
-\title{Try to "tidy" untidy HTML pages}
+\title{Try to "Tidy" Untidy HTML Pages}
 \usage{
 tidyHTML(URL)
 }
@@ -23,6 +23,7 @@ Still no guarantee it will work! \code{:-)}
 }
 \examples{
 
+\dontrun{
 ## Can't find an actual example. The URL from the
 ##   question is no longer online to test it with.
 
@@ -30,6 +31,7 @@ Page <- "http://en.wikipedia.org/wiki/List_of_countries_by_population"
 u <- tidyHTML(Page)
 tables <- readHTMLTable(u)
 str(tables)
+}
 
 }
 \author{

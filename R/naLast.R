@@ -1,4 +1,4 @@
-#' Move all \code{NA} values to the end of the rows or columns of a matrix
+#' Move All \code{NA} Values to the End of the Rows or Columns of a Matrix
 #' 
 #' Moves all of the \code{NA} values in the rows or columns of a matrix to the
 #' end of the respective rows or columns.
@@ -62,3 +62,4 @@ naLast <- function(inmat, by = "row", outList = FALSE, fill = NA) {
     M
   }
 }
+NULL

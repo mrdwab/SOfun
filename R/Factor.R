@@ -44,7 +44,7 @@ Factor <- function(invec, levels = list(), store = TRUE, ...) {
 }
 
 #' @rdname Factor
-#' @export print.Factor
+#' @export
 #' @aliases print.Factor
 print.Factor <- function(x, ...) {
   if (!is.null(attr(x, "Input"))) {

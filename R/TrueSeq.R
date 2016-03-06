@@ -1,4 +1,4 @@
-#' Convert TRUE values in a vector to a grouped sequence
+#' Convert TRUE Values in a Vector to a Grouped Sequence
 #' 
 #' Convert the \code{TRUE} values in a vector into a sequence by groups of
 #' values.

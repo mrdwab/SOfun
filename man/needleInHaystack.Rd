@@ -2,7 +2,7 @@
 % Please edit documentation in R/needleInHaystack.R
 \name{needleInHaystack}
 \alias{needleInHaystack}
-\title{Find a needle in a haystack...}
+\title{Find a Needle in a Haystack...}
 \usage{
 needleInHaystack(findMe, findIn)
 }

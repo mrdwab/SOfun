@@ -1,4 +1,4 @@
-#' Creates a symmetric matrix from a vector
+#' Creates a Symmetric Matrix from a Vector
 #' 
 #' Takes a vector and, if the vector is of the correct lenght to be made into a
 #' symmetric matrix, performs the conversion.

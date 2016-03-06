@@ -6,3 +6,7 @@ NULL
 
 #' @import stringr
 NULL
+
+#' @import utils
+NULL
+

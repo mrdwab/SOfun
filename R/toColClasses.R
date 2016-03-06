@@ -1,8 +1,7 @@
-#' Change the column classes of variables in a \code{data.frame}
+#' Change the Column Classes of Variables in a \code{data.frame}
 #' 
 #' Change the column classes of variables in a \code{data.frame} that has
 #' already been read into your workspace.
-#' 
 #' 
 #' @param inDF The source \code{data.frame}.
 #' @param colClasses A character vector of the desired column classes. This
@@ -52,3 +51,4 @@ toColClasses <- function(inDF, colClasses) {
   })
   inDF
 }
+NULL

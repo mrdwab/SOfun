@@ -19,7 +19,7 @@ Functions I've written as answers to R questions on Stack Overflow. Destined to 
 1. `helpExtract`: Extracts portions of R help files for use in Sweave or R-markdown documents.
 1. `letterRep`: Wraps the `letters` constant making unique values.
 1. `makemeNA`: Converts specific values in a `data.frame` into `NA`.
-1. `melt.wide`: Reshapes double- and tripple-wide `data.table`s into longer `data.frame`s.
+1. `melt_wide`: Reshapes double- and tripple-wide `data.table`s into longer `data.frame`s.
 1. `moveMe`: Shuffles the order of a vector around using natural language statements.
 1. `naLast`: Moves `NA` values in columns or rows to the end of their columns or rows.
 1. `needleInHaystack`: Finds a needle in a haystack.

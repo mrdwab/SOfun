@@ -2,7 +2,7 @@
 % Please edit documentation in R/toColClasses.R
 \name{toColClasses}
 \alias{toColClasses}
-\title{Change the column classes of variables in a \code{data.frame}}
+\title{Change the Column Classes of Variables in a \code{data.frame}}
 \usage{
 toColClasses(inDF, colClasses)
 }

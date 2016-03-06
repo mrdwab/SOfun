@@ -1,8 +1,7 @@
-#' Find a needle in a haystack...
+#' Find a Needle in a Haystack...
 #' 
 #' Find specified search patterns (in any order, not necessarily joined) in
 #' another vector of strings.
-#' 
 #' 
 #' @param findMe What are you looking for? A character vector.
 #' @param findIn Where are you looking for it? A character vector.
@@ -28,3 +27,5 @@ needleInHaystack <- function(findMe, findIn) {
   dimnames(out) <- list(findIn, findMe)
   out
 }
+NULL
+

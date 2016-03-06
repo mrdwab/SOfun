@@ -3,7 +3,6 @@
 #' Given the number of rows in a symmetric matrix, calculate the row and column
 #' indices of the upper or lower triangles.
 #' 
-#' 
 #' @param Nrow The number of rows
 #' @param which Specify \code{which = "lower"} or \code{which = "upper"}.
 #' Defaults to \code{"lower"}.
@@ -34,3 +33,5 @@ TriIndex <- function(Nrow, which = "lower") {
     stop("which should be 'upper' or 'lower'"))
   out
 }
+NULL
+

@@ -1,4 +1,4 @@
-#' Interleaves values within matrices or vectors
+#' Interleaves Values Within Matrices or Vectors
 #' 
 #' Mimics some of the behavior of the \code{Riffle} function
 #' (\url{http://reference.wolfram.com/mathematica/ref/Riffle.html}) in

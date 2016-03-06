@@ -2,7 +2,7 @@
 % Please edit documentation in R/vec2symmat.R
 \name{vec2symmat}
 \alias{vec2symmat}
-\title{Creates a symmetric matrix from a vector}
+\title{Creates a Symmetric Matrix from a Vector}
 \usage{
 vec2symmat(invec, diag = 1, byrow = TRUE)
 }

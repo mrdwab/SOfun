@@ -2,7 +2,7 @@
 % Please edit documentation in R/read.mtable.R
 \name{read.mtable}
 \alias{read.mtable}
-\title{Read data from a file containing multiple datasets}
+\title{Read Data from a File Containing Multiple Datasets}
 \usage{
 read.mtable(inFile, chunkId, ...)
 }

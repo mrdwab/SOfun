@@ -2,7 +2,7 @@
 % Please edit documentation in R/naLast.R
 \name{naLast}
 \alias{naLast}
-\title{Move all \code{NA} values to the end of the rows or columns of a matrix}
+\title{Move All \code{NA} Values to the End of the Rows or Columns of a Matrix}
 \usage{
 naLast(inmat, by = "row", outList = FALSE, fill = NA)
 }

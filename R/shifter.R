@@ -1,11 +1,10 @@
-#' "Shift" the values of a vector ahead or behind by a specified amount
+#' "Shift" the Values of a Vector Ahead or Behind by a Specified Amount
 #' 
 #' This function "shifts" the values of a vector by a specified amount. For
 #' instance, if you are starting with a vector, "x", where the range of values
 #' is between 1 and 10, and you want 10 to be replaced by 9, 9 to be replaced
 #' by 8, and so on, with 1 being ultimately replaced by 10, this funciton
 #' should be of use.
-#' 
 #' 
 #' @param x The range that you are shifting
 #' @param n How much of a shift you want

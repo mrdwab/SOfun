@@ -2,7 +2,7 @@
 % Please edit documentation in R/SampleToSum.R
 \name{SampleToSum}
 \alias{SampleToSum}
-\title{Sample from a specific range with a target vector sum}
+\title{Sample from a Specific Range with a Target Vector Sum}
 \usage{
 SampleToSum(Target = 100, VecLen = 10, InRange = 1:100, Tolerance = 2,
   showSum = TRUE)

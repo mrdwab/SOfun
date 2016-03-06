@@ -2,7 +2,7 @@
 % Please edit documentation in R/moveMe.R
 \name{moveMe}
 \alias{moveMe}
-\title{Reorders the order of a vector around}
+\title{Reorders the Contents of a Vector}
 \usage{
 moveMe(invec, movecommand)
 }

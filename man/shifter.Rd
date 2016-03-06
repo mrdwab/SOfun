@@ -2,7 +2,7 @@
 % Please edit documentation in R/shifter.R
 \name{shifter}
 \alias{shifter}
-\title{"Shift" the values of a vector ahead or behind by a specified amount}
+\title{"Shift" the Values of a Vector Ahead or Behind by a Specified Amount}
 \usage{
 shifter(x = 1:10, n = 1)
 }

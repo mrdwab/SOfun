@@ -2,7 +2,7 @@
 % Please edit documentation in R/Riffle.R
 \name{Riffle}
 \alias{Riffle}
-\title{Interleaves values within matrices or vectors}
+\title{Interleaves Values Within Matrices or Vectors}
 \usage{
 Riffle(...)
 }

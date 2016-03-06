@@ -1,8 +1,7 @@
-#' Shuffle the elements of a vector
+#' Shuffle the Elements of a Vector
 #' 
 #' Shuffles the elements of a vector such that no single element is in the same
 #' place it was before.
-#' 
 #' 
 #' @param inVec The input vector
 #' @return A shuffled version of the input vector
@@ -21,3 +20,4 @@ shuffler <- function(inVec) {
   }
   Res
 }
+NULL

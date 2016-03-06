@@ -1,9 +1,8 @@
-#' Read data from a file containing multiple datasets
+#' Read Data from a File Containing Multiple Datasets
 #' 
 #' Sometimes, a single file might have multiple datasets, each separated with a
 #' "header" of some sort. This function attempts to read the most basic of
 #' those types of files.
-#' 
 #' 
 #' @param inFile The path to the input file
 #' @param chunkId A pattern in the text that identifies the "header" that
@@ -51,3 +50,4 @@ read.mtable <- function(inFile, chunkId, ...) {
   }
   temp.out
 }
+NULL

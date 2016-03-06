@@ -1,9 +1,8 @@
-#' Sample from a specific range with a target vector sum
+#' Sample from a Specific Range with a Target Vector Sum
 #' 
 #' Takes a sample from a given range (for example, 1 to 100), and a specified
 #' resulting vector length (for example, 10), which add up to a specified
 #' value.
-#' 
 #' 
 #' @param Target The value that the vector should \code{sum} to
 #' @param VecLen The required vector length
@@ -46,3 +45,5 @@ SampleToSum <- function(Target = 100, VecLen = 10,
   if (isTRUE(showSum)) cat("Total = ", sum(Res), "\n")
   Res
 }
+NULL
+

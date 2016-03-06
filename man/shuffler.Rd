@@ -2,7 +2,7 @@
 % Please edit documentation in R/shuffler.R
 \name{shuffler}
 \alias{shuffler}
-\title{Shuffle the elements of a vector}
+\title{Shuffle the Elements of a Vector}
 \usage{
 shuffler(inVec)
 }

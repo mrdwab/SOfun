@@ -1,4 +1,4 @@
-#' Reorders the order of a vector around
+#' Reorders the Contents of a Vector
 #' 
 #' Shuffle the order of a vector around using natural language statements.
 #' 
@@ -62,3 +62,4 @@ moveMe <- function(invec, movecommand) {
   }
   myVec
 }
+NULL

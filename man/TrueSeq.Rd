@@ -2,7 +2,7 @@
 % Please edit documentation in R/TrueSeq.R
 \name{TrueSeq}
 \alias{TrueSeq}
-\title{Convert TRUE values in a vector to a grouped sequence}
+\title{Convert TRUE Values in a Vector to a Grouped Sequence}
 \usage{
 TrueSeq(inLogi, zero2NA = FALSE)
 }
