@@ -27,15 +27,16 @@
 #'                              class = "data.frame",
 #'                              row.names = c(NA, -4L))
 #' triplewide
-#' triplewide.long <- melt.wide(triplewide, id.vars="ID",
+#' triplewide.long <- melt_wide(triplewide, id.vars="ID",
 #'                             new.names=c("week", "day", "trial"))
 #' triplewide.long
 #' data.table::dcast(triplewide.long, ID + week + day ~ trial)
 #' 
-#' @export melt.wide
-melt.wide = function(data, id.vars, new.names) {
+#' @export 
+melt_wide = function(data, id.vars, new.names) {
   if (!data.table::is.data.table(data)) data <- data.table::as.data.table(data)
-  data.melt = data.table::melt(data, id.vars=id.vars)
-  data.melt[, (new.names) := data.table::transpose(
-    stringr::str_extract_all(variable, "[0-9]+"))][]
+  variable <- NULL
+  data.table::melt(data, id.vars=id.vars)[
+    , (new.names) := data.table::transpose(
+      stringr::str_extract_all(variable, "[0-9]+"))][]
 }
