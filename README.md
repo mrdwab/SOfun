@@ -1,6 +1,17 @@
 # SOfun
 
-Functions I've written as answers to R questions on Stack Overflow. Destined to be the most important R package you have ever loaded in your R session. Filled with a very strongly cohesive set of functions, as indicated below:
+Functions I've written as answers to R questions on Stack Overflow. Destined to be the most important R package you have ever loaded in your R session. 
+
+## Installation
+
+```
+source("http://news.mrdwab.com/install_github.R")
+install_github("mrdwab/SOfun")
+```
+
+## Contents
+
+The "SOfun" package is filled with a very strongly cohesive set of functions, as indicated below:
 
 1. `adjCombos`: Adjacent combinations.
 1. `almostComplete`: Like `complete.cases`, but more flexible.
