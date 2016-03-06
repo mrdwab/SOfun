@@ -1,11 +1,10 @@
-SOfun
-=====
+# SOfun
 
 Functions I've written as answers to R questions on Stack Overflow. Destined to be the most important R package you have ever loaded in your R session. Filled with a very strongly cohesive set of functions, as indicated below:
 
 1. `adjCombos`: Adjacent combinations.
 1. `almostComplete`: Like `complete.cases`, but more flexible.
-1. `appendMe`: Like `rbind()` but adds the source in the process.
+1. <s>`appendMe`: Like `rbind()` but adds the source in the process.</s> Just use `rbindlist` from "data.table" with the `idcol` argument instead. Much better....
 1. `CharNumSplit`: Splits strings like "ABC123" into "ABC" and "123" or strings like "123ABC" into "123" and "ABC".
 1. `clc`: Clear your workspace.
 1. `completeVecs`: Like `complete.cases()` but for vectors.
@@ -29,6 +28,8 @@ Functions I've written as answers to R questions on Stack Overflow. Destined to 
 1. `SampleToSum`: Samples from a specified range for a vector of a specified length adding up to a specified value.
 1. `shifter`: "Shifts" values in a vector.
 1. `shuffler`: Shuffles the elements of a vector such that no single element is in the same place it was before.
+1. `sortEnds`: Selects the top-n highest or lowest values in a vector.
+1. `TabulateInt`: Modifies tabulate to work with non-positive integers too.
 1. `tidyHTML`: Downloads and parses a page after the page has been sent to the online HTML Tidy web service.
 1. `toColClasses`: Converts `data.frame` columns to specified column classes.
 1. `TriIndex`: Given the number of rows in a symmetric matrix, calculate the row and column indices of the upper or lower triangles.

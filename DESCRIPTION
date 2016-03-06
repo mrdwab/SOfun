@@ -1,11 +1,14 @@
 Package: SOfun
 Type: Package
-Title: Archives some of the functions I've written as answers to R questions on
-    Stack Overflow.
+Title: Functions From Answers to R Questions on Stack Overflow
 Version: 1.0
-Date: 2014-02-09
-Author: Ananda Mahto
-Maintainer: Ananda Mahto <mrdwab@gmail.com>
+Date: 2016-03-06
+Authors@R: person("Ananda", "Mahto", email = "ananda@mahto.info",
+                  role = c("aut", "cre"))
 Description: Nothing special. A very incohesive collection of functions, that's
-    all.
-License: CC0.
+    all. If a function gets moved into a different package, it would be removed
+    from here and struck out on the README file.
+License: CC0
+RoxygenNote: 5.0.1
+Imports: Hmisc,
+    data.table
