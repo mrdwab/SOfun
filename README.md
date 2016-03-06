@@ -7,6 +7,7 @@ Functions I've written as answers to R questions on Stack Overflow. Destined to 
 1. <s>`appendMe`: Like `rbind()` but adds the source in the process.</s> Just use `rbindlist` from "data.table" with the `idcol` argument instead. Much better....
 1. `CharNumSplit`: Splits strings like "ABC123" into "ABC" and "123" or strings like "123ABC" into "123" and "ABC".
 1. `clc`: Clear your workspace.
+1. `col_flatten` and `col_flattenLong`: Likely replacements for `listCol_l` and `listCol_w` from "splitstackshape".
 1. `completeVecs`: Like `complete.cases()` but for vectors.
 1. <s>`concat.split.DT`: Work in progress on an `fread()` approach to `concat.split()` from "splitstackshape".</s> Now part of "splitstackshape" (since V1.4.0 and above).
 1. `Diag`: A faster version of `diag()`.
