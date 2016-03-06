@@ -20,4 +20,4 @@ adjCombos <- function(invec) {
     lapply(B[[x]], function(y) invec[A[[x]]+y])
   }), recursive = FALSE, use.names = FALSE)
 }
-
+NULL

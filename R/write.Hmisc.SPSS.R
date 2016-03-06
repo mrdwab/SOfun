@@ -32,8 +32,7 @@
 #' 
 #' df
 #' 
-#' x <- getwd()
-#' setwd(tempdir())
+#' x <- setwd(tempdir())
 #' list.files()
 #' write.Hmisc.SPSS(df, "df.sav", "df.sps")
 #' cat(readLines("df.sav"), sep = "\n")
@@ -87,3 +86,4 @@ write.Hmisc.SPSS = function(data, datafile, codefile) {
     cat("\nEXECUTE.\n", file = codefile, append = TRUE) }
   write.SPSS(data, datafile, codefile)
 }
+NULL
