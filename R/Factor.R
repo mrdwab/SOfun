@@ -1,6 +1,6 @@
 #' @name Factor
 #' @rdname Factor
-#' @title Factor vectors with multiple levels
+#' @title Factor Vectors with Multiple Levels
 #' 
 #' @description \code{\link{factor}} does not let you use duplicated levels 
 #' nicely. It results in an ugly warning message and you need to use

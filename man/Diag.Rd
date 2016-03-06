@@ -2,7 +2,7 @@
 % Please edit documentation in R/Diag.R
 \name{Diag}
 \alias{Diag}
-\title{Extract the values at the diagonal of a matrix}
+\title{Extract the Values at the Diagonal of a Matrix}
 \usage{
 Diag(inMatrix)
 }
@@ -13,7 +13,7 @@ Diag(inMatrix)
 A vector
 }
 \description{
-A faster version of \code{\link{diag}} (on larger matrices) .
+A faster version of \code{\link{diag}} (on larger matrices).
 }
 \examples{
 

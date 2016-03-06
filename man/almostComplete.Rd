@@ -2,7 +2,7 @@
 % Please edit documentation in R/almostComplete.R
 \name{almostComplete}
 \alias{almostComplete}
-\title{Subset a \code{data.frame} by completeness of rows or columns}
+\title{Subset a \code{data.frame} by Completeness of Rows or Columns}
 \usage{
 almostComplete(dataset, rowPct, colPct = rowPct, n = 1)
 }

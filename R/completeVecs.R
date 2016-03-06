@@ -1,4 +1,4 @@
-#' Extract the \code{complete.cases} for a set of vectors
+#' Extract the \code{complete.cases} for a Set of Vectors
 #' 
 #' Takes vectors as input and outputs a matrix of the complete cases across
 #' these vectors.

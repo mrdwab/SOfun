@@ -4,7 +4,7 @@
 \alias{Factor}
 \alias{RestoreFactor}
 \alias{print.Factor}
-\title{Factor vectors with multiple levels}
+\title{Factor Vectors with Multiple Levels}
 \usage{
 Factor(invec, levels = list(), store = TRUE, ...)
 

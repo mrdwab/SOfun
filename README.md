@@ -10,7 +10,7 @@ Functions I've written as answers to R questions on Stack Overflow. Destined to 
 1. `completeVecs`: Like `complete.cases()` but for vectors.
 1. <s>`concat.split.DT`: Work in progress on an `fread()` approach to `concat.split()` from "splitstackshape".</s> Now part of "splitstackshape" (since V1.4.0 and above).
 1. `Diag`: A faster version of `diag()`.
-1. `expandRows`: Expand the rows of a `data.frame` by a column in the `data.frame` or by a specified vector.
+1. <s>`expandRows`: Expand the rows of a `data.frame` by a column in the `data.frame` or by a specified vector.</s> Now a part of "splitstackshape".
 1. `Factor`: Enhanced version of `factor()` that allows duplicated `levels` to be used more directly.
 1. `findFirst`: Finds the position of the n<sup>th</sup> non-sequential specified value in a vector.
 1. `ftable2df`: Converts the output of `ftable()` to a `data.frame`.
@@ -19,7 +19,7 @@ Functions I've written as answers to R questions on Stack Overflow. Destined to 
 1. `helpExtract`: Extracts portions of R help files for use in Sweave or R-markdown documents.
 1. `letterRep`: Wraps the `letters` constant making unique values.
 1. `makemeNA`: Converts specific values in a `data.frame` into `NA`.
-1. `melt.wide`: Reshapes double- and tripple-wide `data.frame`s into longer `data.frame`s.
+1. `melt.wide`: Reshapes double- and tripple-wide `data.table`s into longer `data.frame`s.
 1. `moveMe`: Shuffles the order of a vector around using natural language statements.
 1. `naLast`: Moves `NA` values in columns or rows to the end of their columns or rows.
 1. `needleInHaystack`: Finds a needle in a haystack.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/ftable2df.R
 \name{ftable2df}
 \alias{ftable2df}
-\title{Convert an \code{ftable} object to a \code{data.frame}}
+\title{Convert an \code{ftable} Object to a \code{data.frame}}
 \usage{
 ftable2df(mydata)
 }
@@ -18,9 +18,6 @@ objects to \code{data.frame}s, such methods do not exist for converting an
 \code{ftable} to a \code{data.frame}. An \code{ftable} is essentially a
 \code{matrix} with \code{attributes} for the rows and columns, which can be
 nested.
-}
-\note{
-%% ~~further notes~~
 }
 \examples{
 

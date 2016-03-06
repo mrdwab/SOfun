@@ -1,4 +1,4 @@
-#' Extract portions from R help files for use in documents
+#' Extract Portions from R Help Files for Use in Documents
 #' 
 #' Extracts specified portions of R help files for use in Sweave or R-markdown
 #' documents.

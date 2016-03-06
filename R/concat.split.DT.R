@@ -1,4 +1,4 @@
-#' Split concatenated cells in a \code{data.frame} or a \code{data.table}
+#' Split Concatenated Cells in a \code{data.frame} or a \code{data.table}
 #' 
 #' A variation of the \code{concat.split} family of functions designed for
 #' large rectangular datasets.

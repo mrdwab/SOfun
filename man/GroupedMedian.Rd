@@ -2,7 +2,7 @@
 % Please edit documentation in R/GroupedMedian.R
 \name{GroupedMedian}
 \alias{GroupedMedian}
-\title{Calculate the median of already grouped data}
+\title{Calculate the Median of Already Grouped Data}
 \usage{
 GroupedMedian(frequencies, intervals, sep = NULL, trim = NULL)
 }

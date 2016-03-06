@@ -2,7 +2,7 @@
 % Please edit documentation in R/adjCombos.R
 \name{adjCombos}
 \alias{adjCombos}
-\title{Create adjacent combinations, varying length}
+\title{Create Adjacent Combinations, Varying Length}
 \usage{
 adjCombos(invec)
 }

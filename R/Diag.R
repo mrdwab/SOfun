@@ -1,6 +1,6 @@
-#' Extract the values at the diagonal of a matrix
+#' Extract the Values at the Diagonal of a Matrix
 #' 
-#' A faster version of \code{\link{diag}} (on larger matrices) .
+#' A faster version of \code{\link{diag}} (on larger matrices).
 #' 
 #' 
 #' @param inMatrix The input matrix

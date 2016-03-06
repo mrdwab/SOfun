@@ -1,4 +1,4 @@
-#' Split vectors in the form of numbers+characters or characters+numbers to respective parts
+#' Split Vectors in the Form of Numbers+Characters or Characters+Numbers into Respective Parts
 #' 
 #' A convenience function for the `perl = TRUE` patterns for \code{"(?<=[a-zA-Z])(?=[0-9])"} and \code{"(?<=[0-9])(?=[a-zA-Z])"}. That's it. Really.
 #' 

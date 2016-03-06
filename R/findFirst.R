@@ -1,9 +1,7 @@
-#' Find the first, second, third, n non-sequential position of a value in a
-#' vector
+#' Find the First, Second, n Non-sequential Position of a Value in a Vector
 #' 
 #' This function returns the location of the first, second, third (and so on)
 #' occurrence of a specified non-sequential value in a vector.
-#' 
 #' 
 #' @param invec The input vector.
 #' @param value The value you are looking for.

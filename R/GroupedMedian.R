@@ -1,4 +1,4 @@
-#' Calculate the median of already grouped data
+#' Calculate the Median of Already Grouped Data
 #' 
 #' Calculates the median of already grouped data given the interval ranges and
 #' the frequencies of each group.

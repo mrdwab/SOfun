@@ -11,4 +11,5 @@ Description: Nothing special. A very incohesive collection of functions, that's
 License: CC0
 RoxygenNote: 5.0.1
 Imports: Hmisc,
-    data.table
+    data.table,
+    stringr

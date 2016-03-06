@@ -2,7 +2,7 @@
 % Please edit documentation in R/concat.split.DT.R
 \name{concat.split.DT}
 \alias{concat.split.DT}
-\title{Split concatenated cells in a \code{data.frame} or a \code{data.table}}
+\title{Split Concatenated Cells in a \code{data.frame} or a \code{data.table}}
 \usage{
 concat.split.DT(dataset, splitcols, sep, drop = TRUE, dotsub = "|")
 }

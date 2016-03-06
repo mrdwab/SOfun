@@ -2,7 +2,7 @@
 % Please edit documentation in R/makemeNA.R
 \name{makemeNA}
 \alias{makemeNA}
-\title{Recode certain values in a \code{data.frame} into \code{NA}}
+\title{Recode Certain Values in a \code{data.frame} into \code{NA}}
 \usage{
 makemeNA(mydf, NAStrings, fixed = TRUE)
 }

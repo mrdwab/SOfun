@@ -1,4 +1,4 @@
-#' "Wrap" the \code{letters} constant
+#' "Wrap" the \code{letters} Constant
 #' 
 #' The \code{letterRep} function "wraps" the \code{letters} constant, making
 #' repeated letters unique by pasting characters together.

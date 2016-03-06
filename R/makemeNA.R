@@ -1,4 +1,4 @@
-#' Recode certain values in a \code{data.frame} into \code{NA}
+#' Recode Certain Values in a \code{data.frame} into \code{NA}
 #' 
 #' A flexible alternative to some of the tricks used to convert certain values
 #' into \code{NA} after a dataset is already loaded in the workspace. Uses

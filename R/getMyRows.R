@@ -1,4 +1,4 @@
-#' Get rows before and after a specific value or rowname
+#' Get Rows Before and After a Specific Value or Rowname
 #' 
 #' Extracts (possibly overlapping) rows provided both a pattern or index
 #' position to match and a range specifying how many rows before and after the

@@ -2,7 +2,7 @@
 % Please edit documentation in R/CharNumSplit.R
 \name{CharNumSplit}
 \alias{CharNumSplit}
-\title{Split vectors in the form of numbers+characters or characters+numbers to respective parts}
+\title{Split Vectors in the Form of Numbers+Characters or Characters+Numbers into Respective Parts}
 \usage{
 CharNumSplit(string, alphaFirst = TRUE)
 }

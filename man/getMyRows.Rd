@@ -2,7 +2,7 @@
 % Please edit documentation in R/getMyRows.R
 \name{getMyRows}
 \alias{getMyRows}
-\title{Get rows before and after a specific value or rowname}
+\title{Get Rows Before and After a Specific Value or Rowname}
 \usage{
 getMyRows(data, pattern, range, isNumeric = TRUE)
 }

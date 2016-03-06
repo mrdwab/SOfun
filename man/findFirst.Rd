@@ -2,8 +2,7 @@
 % Please edit documentation in R/findFirst.R
 \name{findFirst}
 \alias{findFirst}
-\title{Find the first, second, third, n non-sequential position of a value in a
-vector}
+\title{Find the First, Second, n Non-sequential Position of a Value in a Vector}
 \usage{
 findFirst(invec, value, event)
 }

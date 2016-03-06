@@ -2,7 +2,7 @@
 % Please edit documentation in R/completeVecs.R
 \name{completeVecs}
 \alias{completeVecs}
-\title{Extract the \code{complete.cases} for a set of vectors}
+\title{Extract the \code{complete.cases} for a Set of Vectors}
 \usage{
 completeVecs(...)
 }

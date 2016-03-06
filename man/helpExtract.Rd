@@ -2,7 +2,7 @@
 % Please edit documentation in R/helpExtract.R
 \name{helpExtract}
 \alias{helpExtract}
-\title{Extract portions from R help files for use in documents}
+\title{Extract Portions from R Help Files for Use in Documents}
 \usage{
 helpExtract(Function, section = "Usage", type = "m_code", ...)
 }

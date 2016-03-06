@@ -1,4 +1,4 @@
-#' Convert an \code{ftable} object to a \code{data.frame}
+#' Convert an \code{ftable} Object to a \code{data.frame}
 #' 
 #' While convenient methods exist for converting \code{table}s and other
 #' objects to \code{data.frame}s, such methods do not exist for converting an
@@ -9,7 +9,6 @@
 #' 
 #' @param mydata The input \code{ftable} object
 #' @return A \code{data.frame}
-#' @note %% ~~further notes~~
 #' @author Ananda Mahto
 #' @references \url{http://stackoverflow.com/a/11143126/1270695}
 #' @examples

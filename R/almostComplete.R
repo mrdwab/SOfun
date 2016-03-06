@@ -1,4 +1,4 @@
-#' Subset a \code{data.frame} by completeness of rows or columns
+#' Subset a \code{data.frame} by Completeness of Rows or Columns
 #' 
 #' An alternate to \code{\link{complete.cases}} that lets you specify the
 #' percentage of completeness desired.

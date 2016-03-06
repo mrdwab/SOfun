@@ -2,7 +2,7 @@
 % Please edit documentation in R/letterRep.R
 \name{letterRep}
 \alias{letterRep}
-\title{"Wrap" the \code{letters} constant}
+\title{"Wrap" the \code{letters} Constant}
 \usage{
 letterRep(inRange)
 }

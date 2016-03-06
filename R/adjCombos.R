@@ -1,4 +1,4 @@
-#' Create adjacent combinations, varying length
+#' Create Adjacent Combinations, Varying Length
 #' 
 #' Create adjacent combinations of the elements of a vector, varying the length
 #' with each iteration.
