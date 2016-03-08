@@ -36,6 +36,7 @@ The "SOfun" package is filled with a very strongly cohesive set of functions, as
 1. `naLast`: Moves `NA` values in columns or rows to the end of their columns or rows.
 1. `needleInHaystack`: Finds a needle in a haystack.
 1. `read.mtable`: Reads files that have multiple tables in one go.
+1. `ReshapeLong`: Reshapes data with multiple measurements in a wide format into a long format with one column per measurement type.
 1. `Riffle`: Like the `riffle` function from Mathematica, sort of.
 1. `SampleToSum`: Samples from a specified range for a vector of a specified length adding up to a specified value.
 1. `shifter`: "Shifts" values in a vector.
