@@ -49,6 +49,7 @@ The "SOfun" package is filled with a very strongly cohesive set of functions, as
 1. [`TriIndex`](/R/TriIndex.R): Given the number of rows in a symmetric matrix, calculate the row and column indices of the upper or lower triangles.
 1. [`TrueSeq`](/R/TrueSeq.R): Convert the `TRUE` values in a vector into a sequence by groups of values.
 1. [`vec2symmat`](/R/vec2symmat.R): Converts a `vector` to a symmetric matrix (if possible).
+1. [`vectorBind`](/R/vectorBind.R): Binds named vectors into a matrix.
 1. [`write.Hmisc.SPSS`](/R/write.Hmisc.SPSS.R): Writes SPSS files with label information (when using the Hmisc package).
 
 Don't ask me why I did this.

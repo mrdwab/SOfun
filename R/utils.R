@@ -10,3 +10,5 @@ NULL
 #' @import utils
 NULL
 
+getDots <- function(...) sapply(substitute(list(...))[-1], deparse)
+NULL
