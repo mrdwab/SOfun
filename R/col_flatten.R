@@ -35,6 +35,7 @@ col_flatten <- function(indt, cols, drop = FALSE) {
   if (isTRUE(drop)) indt[, (cols) := NULL]
   indt[]
 }
+NULL
 
 #' @rdname col_flatten
 #' @examples
@@ -49,3 +50,4 @@ col_flattenLong <- function(indt, cols) {
   mv <- lapply(cols, function(y) grep(sprintf("^%s_", y), names(x)))
   data.table::setorderv(melt(x, measure.vars = mv, value.name = cols), ob)[]
 }
+NULL
