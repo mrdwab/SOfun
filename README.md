@@ -36,6 +36,7 @@ The "SOfun" package is filled with a very strongly cohesive set of functions, as
 1. [`makemeNA`](/R/makemeNA.R): Converts specific values in a `data.frame` into `NA`.
 1. [`melt_wide`](/R/melt_wide.R): Reshapes double- and tripple-wide `data.table`s into longer `data.frame`s.
 1. [`moveMe`](/R/moveMe.R): Shuffles the order of a vector around using natural language statements.
+1. [`mySOreputation`](/R/mySOreputation.R): Parse your reputation page from any of the Stack Exchange sites.
 1. [`naLast`](/R/naLast.R): Moves `NA` values in columns or rows to the end of their columns or rows.
 1. [`needleInHaystack`](/R/needleInHaystack.R): Finds a needle in a haystack.
 1. [`read.mtable`](/R/read.mtable.R): Reads files that have multiple tables in one go.
