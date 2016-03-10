@@ -46,6 +46,7 @@ The "SOfun" package is filled with a very strongly cohesive set of functions, as
 1. [`shuffler`](/R/shuffler.R): Shuffles the elements of a vector such that no single element is in the same place it was before.
 1. [`sortEnds`](/R/sortEnds.R): Selects the top-n highest or lowest values in a vector.
 1. [`TabulateInt`](/R/TabulateInt.R): Modifies tabulate to work with non-positive integers too.
+1. [`this_by_n`](/R/this_by_n.R): Applies a function by every n values to a vector minus the first value.
 1. [`tidyHTML`](/R/tidyHTML.R): Downloads and parses a page after the page has been sent to the online HTML Tidy web service.
 1. [`toColClasses`](/R/toColClasses.R): Converts `data.frame` columns to specified column classes.
 1. [`TriIndex`](/R/TriIndex.R): Given the number of rows in a symmetric matrix, calculate the row and column indices of the upper or lower triangles.
