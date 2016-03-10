@@ -16,6 +16,7 @@ The "SOfun" package is filled with a very strongly cohesive set of functions, as
 1. [`adjCombos`](/R/adjCombos.R): Adjacent combinations.
 1. [`almostComplete`](/R/almostComplete.R): Like `complete.cases`, but more flexible.
 1. <s>`appendMe`: Like `rbind()` but adds the source in the process.</s> Just use `rbindlist` from "data.table" with the `idcol` argument instead. Much better....
+1. [`arrayExtractor`](/R/arrayExtractor.R): Extracts data from an array.
 1. [`CharNumSplit`](/R/CharNumSplit.R): Splits strings like "ABC123" into "ABC" and "123" or strings like "123ABC" into "123" and "ABC".
 1. [`clc`](/R/clc.R):Clear your workspace.
 1. [`col_flatten` and `col_flattenLong`](/R/col_flatten.R): Likely replacements for `listCol_l` and `listCol_w` from "splitstackshape".
