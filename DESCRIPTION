@@ -1,8 +1,8 @@
 Package: SOfun
 Type: Package
 Title: Functions From Answers to R Questions on Stack Overflow
-Version: 1.0
-Date: 2016-03-06
+Version: 1.1
+Date: 2016-03-18
 Authors@R: person("Ananda", "Mahto", email = "ananda@mahto.info",
                   role = c("aut", "cre"))
 Description: Nothing special. A very incohesive collection of functions, that's

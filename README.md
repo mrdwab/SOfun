@@ -32,6 +32,7 @@ The "SOfun" package is filled with a very strongly cohesive set of functions, as
 1. [`getMyRows`](/R/getMyRows.R): Extracts a range of rows from a `data.frame`.
 1. [`GroupedMedian`](/R/GroupedMedian.R): Calculates the median of grouped data.
 1. [`helpExtract`](/R/helpExtract.R): Extracts portions of R help files for use in Sweave or R-markdown documents.
+1. [`lengthener`](/R/lengthener.R): Lengthens a dataset by the combination of its columns.
 1. [`letterRep`](/R/letterRep.R): Wraps the `letters` constant making unique values.
 1. [`makemeNA`](/R/makemeNA.R): Converts specific values in a `data.frame` into `NA`.
 1. [`melt_wide`](/R/melt_wide.R): Reshapes double- and tripple-wide `data.table`s into longer `data.frame`s.
