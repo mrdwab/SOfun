@@ -34,6 +34,7 @@ The "SOfun" package is filled with a very strongly cohesive set of functions, as
 1. [`helpExtract`](/R/helpExtract.R): Extracts portions of R help files for use in Sweave or R-markdown documents.
 1. [`lengthener`](/R/lengthener.R): Lengthens a dataset by the combination of its columns.
 1. [`letterRep`](/R/letterRep.R): Wraps the `letters` constant making unique values.
+1. [`list_unlister`](/R/list_unlister.R): Unlists columns of lists by row creating combinations of values in the process.
 1. [`makemeNA`](/R/makemeNA.R): Converts specific values in a `data.frame` into `NA`.
 1. [`melt_wide`](/R/melt_wide.R): Reshapes double- and tripple-wide `data.table`s into longer `data.frame`s.
 1. [`moveMe`](/R/moveMe.R): Shuffles the order of a vector around using natural language statements.
