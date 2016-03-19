@@ -3,8 +3,9 @@ Type: Package
 Title: Functions From Answers to R Questions on Stack Overflow
 Version: 1.2
 Date: 2016-03-18
-Authors@R: person("Ananda", "Mahto", email = "ananda@mahto.info",
-                  role = c("aut", "cre"))
+Authors@R: c(person("Ananda", "Mahto", email = "ananda@mahto.info",
+             role = c("aut", "cre")),
+             person("Jota", role = "aut"))
 Description: Nothing special. A very incohesive collection of functions, that's
     all. If a function gets moved into a different package, it would be removed
     from here and struck out on the README file.
