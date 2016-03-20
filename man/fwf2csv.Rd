@@ -19,7 +19,7 @@ to \code{FALSE}.}
 A vector or a \code{data.frame}, depending on the value in \code{toDF}.
 }
 \description{
-Uses AWK to convert a fixed-width file to a CSV based on stacks of whitespace.
+Uses awk to convert a fixed-width file to a CSV based on stacks of whitespace.
 }
 \note{
 Only tested on Linux.

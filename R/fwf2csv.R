@@ -1,6 +1,6 @@
 #' Creates a CSV Representation of Data Accoding to Stacks of Whitespace
 #' 
-#' Uses AWK to convert a fixed-width file to a CSV based on stacks of whitespace.
+#' Uses awk to convert a fixed-width file to a CSV based on stacks of whitespace.
 #' 
 #' @param infile The input file. Can also be \code{"clipboard"} to read directly
 #' from the clipboard.
