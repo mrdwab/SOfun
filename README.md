@@ -25,6 +25,7 @@ The "SOfun" package is filled with a very strongly cohesive set of functions, as
 1. [`dailyCalendar` and `WeekDays`](/R/dailyCalendar.R): Creates a daily calendar in R.
 1. [`Diag`](/R/Diag.R): A faster version of `diag()`.
 1. [`dist2df`](/R/dist2df.R): Converts "dist" objects to `data.frame`s.
+1. [`dupe_thresh`](/R/dupe_thresh.R): Filters a vector according to the number of duplicates in the vector.
 1. <s>`expandRows`: Expand the rows of a `data.frame` by a column in the `data.frame` or by a specified vector.</s> Now a part of "splitstackshape".
 1. [`Factor`](/R/Factor.R): Enhanced version of `factor()` that allows duplicated `levels` to be used more directly.
 1. [`findFirst`](/R/findFirst.R): Finds the position of the n<sup>th</sup> non-sequential specified value in a vector.
