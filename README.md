@@ -29,7 +29,7 @@ The "SOfun" package is filled with a very strongly cohesive set of functions, as
 1. <s>`expandRows`: Expand the rows of a `data.frame` by a column in the `data.frame` or by a specified vector.</s> Now a part of "splitstackshape".
 1. [`Factor`](/R/Factor.R): Enhanced version of `factor()` that allows duplicated `levels` to be used more directly.
 1. [`findFirst`](/R/findFirst.R): Finds the position of the n<sup>th</sup> non-sequential specified value in a vector.
-1. [`ftable2df`](/R/ftable2df.R): Converts the output of `ftable()` to a `data.frame`.
+1. [<s>`ftable2df`</s> `ftable2dt`](/R/ftable2dt.R): Converts the output of `ftable()` to a `data.table`. *NOTE: Changed from `data.frame` to `data.table`.*
 1. [`fwf2csv`](/R/fwf2csv.R): Uses awk to convert a fixed-width file to a CSV based on stacks of whitespace.
 1. [`getMyRows`](/R/getMyRows.R): Extracts a range of rows from a `data.frame`.
 1. [`GroupedMedian`](/R/GroupedMedian.R): Calculates the median of grouped data.
