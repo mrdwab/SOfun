@@ -8,18 +8,35 @@
 #' \code{matrix} with \code{attributes} for the rows and columns, which can be
 #' nested.
 #' 
-#' @param mydata The input \code{ftable} or \code{array}
-#' @param direction Should the reslut be "wide" (with multiple measurement 
+#' @param mydata The input \code{ftable} or \code{array}.
+#' @param direction Should the reslut be "wide" (with multiple measurement.
 #' columns) or "long" (with a single measurement column)? Defaults to \code{"wide"}.
 #' @return A \code{data.table}
 #' @author Ananda Mahto
 #' @references \url{http://stackoverflow.com/a/11143126/1270695}
+#' @note If the array has no \code{dimnames}, names would be added using the
+#' \code{provideDimnames} function.
 #' @examples
 #' 
 #' x <- ftable(Titanic, row.vars = 1:3)
 #' x
 #' ftable2dt(x)
 #' ftable2dt(x, direction = "long")
+#' 
+#' \dontrun{
+#' dims <- c(2, 1, 2, 3, 2)
+#' set.seed(1)
+#' M <- `dim<-`(sample(100, prod(dims), TRUE), dims)
+#' N <- O <- `dimnames<-`(M, lapply(dims, function(x) c(letters, LETTERS)[seq_len(x)]))
+#' names(attributes(O)$dimnames) <- c("first", "second", "third", "fourth", "fifth")
+#' 
+#' ftable2dt(M)
+#' ftable2dt(N)
+#' ftable2dt(O)
+#' ftable2dt(M, "long")
+#' ftable2dt(N, "long")
+#' ftable2dt(O, "long")
+#' }
 #' 
 #' @export ftable2dt
 ftable2dt <- function(inarray, direction = "wide") {
