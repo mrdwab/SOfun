@@ -44,6 +44,7 @@ NULL
 ftablewide <- function(FT) {
   ft_attr <- attributes(FT)
   rows <- rev(expand.grid(rev(ft_attr$row.vars)))
+  if (is.null(names(ft_attr$row.vars))) setnames(rows, paste0("V", seq_len(ncol(rows))))
   cols <- data.table(setattr(FT, "class", "matrix"))
   setnames(cols, do.call(paste, c(rev(expand.grid(rev(ft_attr$col.vars))), sep = "_")))
   data.table(rows, cols)
