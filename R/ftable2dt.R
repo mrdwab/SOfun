@@ -25,28 +25,36 @@
 ftable2dt <- function(inarray, direction = "wide") {
   if (!is.array(inarray)) stop("input must be an array")
   dims <- dim(inarray)
+  FIX <- !any(names(attributes(inarray)) %in% c("dimnames", "row.vars"))
   if (is.null(dimnames(inarray))) {
     inarray <- provideDimnames(inarray, base = list(as.character(seq_len(max(dims)))))
   }
-  FT <- if (any(class(inarray) %in% "ftable")) inarray else ftable(inarray) 
+  FT <- if (any(class(inarray) %in% "ftable")) inarray else ftable(inarray)
+  temp <- ftablewide(FT, FIX = FIX)
   switch(direction,
-         long = ftablelong(FT, dims),
-         wide = ftablewide(FT),
+         long = ftablelong(temp, FIX = FIX)[],
+         wide = setorderv(temp[["Data"]], temp[["Names"]])[],
          stop("direction must be 'wide' or 'long'"))
 }
 NULL
 
-ftablelong <- function(FT, dims) {
-  data.table(as.table(ftable(FT), row.vars = seq_along(dims)))
+ftablewide <- function(FT, FIX = TRUE) {
+  ft_attr <- attributes(FT)
+  rows <- setDT(rev(expand.grid(rev(ft_attr$row.vars), stringsAsFactors = FALSE)))
+  if (is.null(names(ft_attr$row.vars))) setnames(rows, paste0("V", seq_len(ncol(rows))))
+  Nam <- names(rows)
+  cols <- data.table(setattr(FT, "class", "matrix"))
+  setnames(cols, do.call(paste, c(rev(expand.grid(rev(ft_attr$col.vars), stringsAsFactors = FALSE)), sep = "_")))
+  temp <- data.table(rows, cols)
+  if (isTRUE(FIX)) temp[, (Nam) := lapply(.SD, as.integer), .SDcols = Nam]
+  list(Attributes = ft_attr, Names = Nam, Data = temp)
 }
 NULL
 
-ftablewide <- function(FT) {
-  ft_attr <- attributes(FT)
-  rows <- rev(expand.grid(rev(ft_attr$row.vars)))
-  if (is.null(names(ft_attr$row.vars))) setnames(rows, paste0("V", seq_len(ncol(rows))))
-  cols <- data.table(setattr(FT, "class", "matrix"))
-  setnames(cols, do.call(paste, c(rev(expand.grid(rev(ft_attr$col.vars))), sep = "_")))
-  data.table(rows, cols)
+ftablelong <- function(inlist, FIX = TRUE) {
+  temp <- melt(inlist[["Data"]], id.vars = inlist[["Names"]], variable.factor = FALSE)
+  if (isTRUE(FIX)) set(temp, i = NULL, j = match("variable", names(temp)), value = as.integer(temp[["variable"]]))
+  varName <- names(inlist[["Attributes"]]$col.vars)
+  varName <- if (is.null(varName)) paste0("V", length(inlist[[2]])+1) else varName
+  setnames(temp, "variable", varName)
 }
-NULL
