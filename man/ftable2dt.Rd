@@ -24,7 +24,8 @@ nested.
 }
 \note{
 If the array has no \code{dimnames}, names would be added using the
-\code{provideDimnames} function.
+\code{provideDimnames} function. Defaults to \code{reshape2::melt} if the
+input is a simple matrix.
 }
 \examples{
 

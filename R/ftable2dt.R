@@ -15,7 +15,8 @@
 #' @author Ananda Mahto
 #' @references \url{http://stackoverflow.com/a/11143126/1270695}
 #' @note If the array has no \code{dimnames}, names would be added using the
-#' \code{provideDimnames} function.
+#' \code{provideDimnames} function. Defaults to \code{reshape2::melt} if the
+#' input is a simple matrix.
 #' @examples
 #' 
 #' x <- ftable(Titanic, row.vars = 1:3)
@@ -40,18 +41,28 @@
 #' 
 #' @export ftable2dt
 ftable2dt <- function(inarray, direction = "wide") {
-  if (!is.array(inarray)) stop("input must be an array")
-  dims <- dim(inarray)
-  FIX <- !any(names(attributes(inarray)) %in% c("dimnames", "row.vars"))
-  if (is.null(dimnames(inarray))) {
-    inarray <- provideDimnames(inarray, base = list(as.character(seq_len(max(dims)))))
+  InArray <- copy(inarray)
+  if (!is.array(InArray)) stop("input must be an array")
+  dims <- dim(InArray)
+  if (length(dims) == 1) {
+    stop("nothing to do here....")
+  } else if (length(dims) == 2 & (!any(class(InArray) %in% "ftable"))) {
+    switch(direction, 
+           wide = as.data.table(InArray),
+           long = setDT(melt(InArray))[],
+           stop("direction must be 'wide' or 'long'"))
+  } else {
+    FIX <- !any(names(attributes(InArray)) %in% c("dimnames", "row.vars"))
+    if (is.null(dimnames(InArray))) {
+      InArray <- provideDimnames(InArray, base = list(as.character(seq_len(max(dims)))))
+    }
+    FT <- if (any(class(InArray) %in% "ftable")) InArray else ftable(InArray)
+    temp <- ftablewide(FT, FIX = FIX)
+    switch(direction,
+           long = ftablelong(temp, FIX = FIX)[],
+           wide = setorderv(temp[["Data"]], temp[["Names"]])[],
+           stop("direction must be 'wide' or 'long'"))
   }
-  FT <- if (any(class(inarray) %in% "ftable")) inarray else ftable(inarray)
-  temp <- ftablewide(FT, FIX = FIX)
-  switch(direction,
-         long = ftablelong(temp, FIX = FIX)[],
-         wide = setorderv(temp[["Data"]], temp[["Names"]])[],
-         stop("direction must be 'wide' or 'long'"))
 }
 NULL
 
