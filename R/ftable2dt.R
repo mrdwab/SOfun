@@ -16,7 +16,7 @@
 #' @references \url{http://stackoverflow.com/a/11143126/1270695}
 #' @note If the array has no \code{dimnames}, names would be added using the
 #' \code{provideDimnames} function. Defaults to \code{reshape2::melt} if the
-#' input is a simple matrix.
+#' input is a simple matrix and not a multidimensional array.
 #' @examples
 #' 
 #' x <- ftable(Titanic, row.vars = 1:3)
