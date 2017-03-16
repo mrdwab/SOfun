@@ -25,10 +25,9 @@ clc(TRUE)  # Will affect hidden files
 }
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/20389913/1270695}
 }
-
+\author{
+Ananda Mahto
+}

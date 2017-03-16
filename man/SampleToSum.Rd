@@ -47,10 +47,9 @@ set.seed(123)
 SampleToSum(Target = 1163, VecLen = 15, InRange = 50:150)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/14687223/1270695}
 }
-
+\author{
+Ananda Mahto
+}

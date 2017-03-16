@@ -45,10 +45,9 @@ x
 moveMe(x, "hp first; cyl after drat; vs, am, gear before mpg; wt last")
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/18420673/1270695}
 }
-
+\author{
+Ananda Mahto
+}

@@ -26,10 +26,9 @@ y <- c("ar", "n*", "a", "zo")
 needleInHaystack(y, x)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/22129542/1270695}
 }
-
+\author{
+Ananda Mahto
+}

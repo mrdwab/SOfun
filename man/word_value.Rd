@@ -32,10 +32,9 @@ word_value(myvec)
 word_value(myvec, TRUE)
 
 }
-\author{
-Ananda Mahto and \href{http://stackoverflow.com/users/640595/jota}{Jota}.
-}
 \references{
 \url{http://stackoverflow.com/q/36097446/1270695}
 }
-
+\author{
+Ananda Mahto and \href{http://stackoverflow.com/users/640595/jota}{Jota}.
+}

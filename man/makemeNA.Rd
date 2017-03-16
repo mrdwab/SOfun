@@ -63,10 +63,9 @@ makemeNA(temp, "NEG")
 makemeNA(temp, "^[0-9]{3}$", fixed = FALSE)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/14898521/1270695}
 }
-
+\author{
+Ananda Mahto
+}

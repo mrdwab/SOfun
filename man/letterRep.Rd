@@ -22,10 +22,9 @@ letterRep(60)
 letterRep(20:40)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/21681824/1270695}
 }
-
+\author{
+Ananda Mahto
+}

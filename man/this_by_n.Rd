@@ -29,10 +29,9 @@ this_by_n(x, 2, max)
 this_by_n(x, 4, min)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/34563693/1270695}
 }
-
+\author{
+Ananda Mahto
+}

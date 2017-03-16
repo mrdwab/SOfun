@@ -21,10 +21,9 @@ place it was before.
 shuffler(letters[1:10])
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/19898689/1270695}
 }
-
+\author{
+Ananda Mahto
+}

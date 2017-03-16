@@ -33,10 +33,9 @@ m <- matrix(0, nrow = 4, ncol = 4)
 which(lower.tri(m), arr.ind = TRUE)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/20899060/1270695}
 }
-
+\author{
+Ananda Mahto
+}

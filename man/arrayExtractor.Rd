@@ -38,10 +38,9 @@ arrayExtractor(my_array, list(NULL, "D_21", "D_32"))
 arrayExtractor(my_array, list(NULL, c("D_21", "D_22"), NULL))
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/34795331/1270695}
 }
-
+\author{
+Ananda Mahto
+}

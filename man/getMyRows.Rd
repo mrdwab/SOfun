@@ -45,10 +45,9 @@ getMyRows(dat1, c("AB", "AC"), -1:1, FALSE)
 getMyRows(dat1, c("AB", "AC"), c(-1, 1), FALSE)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/13155669/1270695}
 }
-
+\author{
+Ananda Mahto
+}

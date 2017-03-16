@@ -30,10 +30,9 @@ ReshapeLong(dadmom, c("name", "inc"))
 }
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/10468969/1270695}
 }
-
+\author{
+Ananda Mahto
+}

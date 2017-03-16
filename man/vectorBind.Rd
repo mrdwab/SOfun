@@ -26,10 +26,9 @@ t3 <- table(sample(LETTERS[c(2, 4, 5)], 20, TRUE))
 vectorBind(t1, t2, t3)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/25639223/1270695}
 }
-
+\author{
+Ananda Mahto
+}

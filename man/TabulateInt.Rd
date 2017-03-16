@@ -40,4 +40,3 @@ table(cut(x, seq(min(x), max(x)+1, 1), include.lowest = TRUE))
 \author{
 Ananda Mahto
 }
-

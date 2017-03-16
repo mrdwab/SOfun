@@ -33,10 +33,9 @@ C <- c(1, 2, NA)
 completeVecs(A, B, C)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/20146003/1270695}
 }
-
+\author{
+Ananda Mahto
+}

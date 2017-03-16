@@ -50,10 +50,9 @@ ftable2dt(O, "long")
 }
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/11143126/1270695}
 }
-
+\author{
+Ananda Mahto
+}

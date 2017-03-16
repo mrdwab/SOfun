@@ -2,8 +2,8 @@
 % Please edit documentation in R/SOfun-package.R
 \docType{package}
 \name{SOfun-package}
-\alias{SOfun}
 \alias{SOfun-package}
+\alias{SOfun}
 \title{Functions written while answering Stack Overflow questions}
 \description{
 A collection of functions I've written while answering questions on Stack
@@ -46,4 +46,3 @@ Ananda Mahto
 Maintainer: <ananda@mahto.info> Ananda Mahto
 }
 \keyword{package}
-

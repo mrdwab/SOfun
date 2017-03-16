@@ -48,11 +48,10 @@ cat("Header: Boston city data",
 read.mtable(x, "Header", header = TRUE)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/11530036/1270695},
 \url{http://stackoverflow.com/a/11555316/1270695}
 }
-
+\author{
+Ananda Mahto
+}

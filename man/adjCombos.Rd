@@ -21,10 +21,9 @@ with each iteration.
 adjCombos(letters[1:5])
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/20157957/1270695}
 }
-
+\author{
+Ananda Mahto
+}

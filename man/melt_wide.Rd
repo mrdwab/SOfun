@@ -43,10 +43,9 @@ triplewide.long
 data.table::dcast(triplewide.long, ID + week + day ~ trial)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/10170630/1270695}
 }
-
+\author{
+Ananda Mahto
+}

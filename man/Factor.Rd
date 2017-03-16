@@ -2,8 +2,9 @@
 % Please edit documentation in R/Factor.R
 \name{Factor}
 \alias{Factor}
-\alias{RestoreFactor}
+\alias{Factor}
 \alias{print.Factor}
+\alias{RestoreFactor}
 \title{Factor Vectors with Multiple Levels}
 \usage{
 Factor(invec, levels = list(), store = TRUE, ...)
@@ -20,9 +21,9 @@ level and the values are what should be mapped to those levels.}
 
 \item{store}{Logical. Should the input values be stored as an attribute?}
 
-\item{x}{The object to be printed.}
-
 \item{\dots}{Additional arguments to \code{factor}.}
+
+\item{x}{The object to be printed.}
 }
 \value{
 A factored variable with \code{class} of \code{factor} and
@@ -47,13 +48,12 @@ y
 RestoreFactor(y)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/19410249/1270695}
 }
 \seealso{
 \code{\link{factor}}, \code{\link{levels}}
 }
-
+\author{
+Ananda Mahto
+}

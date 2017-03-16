@@ -29,10 +29,9 @@ vec2symmat(1:15, diag = 0)
 vec2symmat(1:15, diag = 0, byrow = FALSE)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/18598933/1270695}
 }
-
+\author{
+Ananda Mahto
+}

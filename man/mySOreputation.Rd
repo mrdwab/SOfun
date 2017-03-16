@@ -40,9 +40,6 @@ plot(apply.monthly(mydfx, sum))
 
 
 }
-\author{
-Paul Hiemstra provided the base parser. Built upon by Ananda Mahto.
-}
 \references{
 Values for the "actions" variable determined after visiting
 \url{http://meta.stackexchange.com/a/43005/214964}.
@@ -51,4 +48,6 @@ There is one value not mentioned at that page, coded as \code{action_id ==
 gets when they have above a certain reputation and are active on multiple
 Stack Exchange sites.
 }
-
+\author{
+Paul Hiemstra provided the base parser. Built upon by Ananda Mahto.
+}

@@ -36,10 +36,9 @@ table(dupe_thresh(x, "== 3"))
 table(dupe_thresh(x, "!=3"))
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/29973061/1270695}
 }
-
+\author{
+Ananda Mahto
+}

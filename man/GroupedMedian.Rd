@@ -56,10 +56,9 @@ y <- data.frame(table(cut(x, 10)))
 GroupedMedian(y$Freq, y$Var1, sep = ",", trim = "cut")
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/18931054/1270695}
 }
-
+\author{
+Ananda Mahto
+}

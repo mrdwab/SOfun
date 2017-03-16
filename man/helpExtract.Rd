@@ -54,4 +54,3 @@ cat(helpExtract(cor, type = "m_text", section="Description"))
 \author{
 Ananda Mahto
 }
-

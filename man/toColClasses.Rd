@@ -47,10 +47,9 @@ y
 str(y)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/18893672/1270695}
 }
-
+\author{
+Ananda Mahto
+}

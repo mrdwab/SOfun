@@ -27,10 +27,9 @@ x <- sample(c(TRUE, FALSE), 100, TRUE)
 TrueSeq(x)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/21328046/1270695}
 }
-
+\author{
+Ananda Mahto
+}

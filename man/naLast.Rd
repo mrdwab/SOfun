@@ -41,10 +41,9 @@ naLast(m, by = "col")
 naLast(m, by = "col", outList = TRUE)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/23008142/1270695}
 }
-
+\author{
+Ananda Mahto
+}

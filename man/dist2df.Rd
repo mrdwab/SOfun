@@ -21,10 +21,9 @@ dd <- as.dist((1 - cor(USJudgeRatings)[1:5, 1:5])/2)
 dist2df(dd)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/23474729/1270695}
 }
-
+\author{
+Ananda Mahto
+}

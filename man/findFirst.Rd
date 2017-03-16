@@ -33,10 +33,9 @@ which(a == "B")
 findFirst(a, "B", 2)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/22049035/1270695}
 }
-
+\author{
+Ananda Mahto
+}

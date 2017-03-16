@@ -51,10 +51,9 @@ file.remove("df.sav", "df.sps")
 setwd(x)
 
 }
-\author{
-Ananda Mahto. Includes code from Chuck Cleland
-}
 \references{
 \url{http://stackoverflow.com/a/10261534/1270695}
 }
-
+\author{
+Ananda Mahto. Includes code from Chuck Cleland
+}

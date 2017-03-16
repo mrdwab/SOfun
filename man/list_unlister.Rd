@@ -37,10 +37,9 @@ x3 = list(c("a", "b"), "c", "d", c("e", "f"), c("g", "h", "i")))
 list_unlister(DT)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/23217958/1270695}
 }
-
+\author{
+Ananda Mahto
+}

@@ -31,10 +31,9 @@ shifter()[X]
 shifter(n = -2)[X]
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/20825012/1270695}
 }
-
+\author{
+Ananda Mahto
+}

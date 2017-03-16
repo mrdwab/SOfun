@@ -25,10 +25,9 @@ lengthener(mydf, 2)
 lengthener(mydf, 3)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/35690478/1270695}
 }
-
+\author{
+Ananda Mahto
+}

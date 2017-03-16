@@ -34,10 +34,9 @@ fwf2csv(myfile)
 fwf2csv(myfile, TRUE, header = FALSE)
  
 }
-\author{
-Ananda Mahto and \href{http://stackoverflow.com/users/1745001/ed-morton}{Ed Morton}.
-}
 \references{
 \url{http://stackoverflow.com/q/30868600/1270695}
 }
-
+\author{
+Ananda Mahto and \href{http://stackoverflow.com/users/1745001/ed-morton}{Ed Morton}.
+}

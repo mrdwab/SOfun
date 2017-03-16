@@ -74,10 +74,9 @@ almostComplete(mydf, .7)
 almostComplete(mydf, rowPct = .2, colPct = .5)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/20475029/1270695}
 }
-
+\author{
+Ananda Mahto
+}

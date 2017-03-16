@@ -34,10 +34,9 @@ str(tables)
 }
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/12761741/1270695}
 }
-
+\author{
+Ananda Mahto
+}

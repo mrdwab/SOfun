@@ -24,10 +24,9 @@ Diag(m)
 diag(m)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/20489737/1270695}
 }
-
+\author{
+Ananda Mahto
+}

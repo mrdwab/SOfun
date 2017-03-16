@@ -26,10 +26,9 @@ CharNumSplit(STR1, alphaFirst = TRUE)
 CharNumSplit(STR2, alphaFirst = FALSE)
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/a/23052016/1270695}
 }
-
+\author{
+Ananda Mahto
+}

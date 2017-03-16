@@ -45,10 +45,9 @@ Riffle(1:6, "x", "y")
 Riffle(1:6, c("x", "y"))
 
 }
-\author{
-Ananda Mahto
-}
 \references{
 \url{http://stackoverflow.com/q/21347207/1270695}
 }
-
+\author{
+Ananda Mahto
+}
