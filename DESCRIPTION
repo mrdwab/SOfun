@@ -1,8 +1,8 @@
 Package: SOfun
 Type: Package
 Title: Functions From Answers to R Questions on Stack Overflow
-Version: 1.6
-Date: 2016-03-25
+Version: 1.7
+Date: 2017-03-17
 Authors@R: c(person("Ananda", "Mahto", email = "ananda@mahto.info",
              role = c("aut", "cre")),
              person("Jota", role = "aut"),
@@ -11,10 +11,11 @@ Description: Nothing special. A very incohesive collection of functions, that's
     all. If a function gets moved into a different package, it would be removed
     from here and struck out on the README file.
 License: CC0
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
 Imports: Hmisc,
     data.table,
     stringr,
     XML,
-    utils
+    utils,
+    overflow
 Suggests: reshape2

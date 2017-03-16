@@ -38,6 +38,7 @@ The "SOfun" package is filled with a very strongly cohesive set of functions, as
 1. [`letterRep`](/R/letterRep.R): Wraps the `letters` constant making unique values.
 1. [`list_unlister`](/R/list_unlister.R): Unlists columns of lists by row creating combinations of values in the process.
 1. [`makemeNA`](/R/makemeNA.R): Converts specific values in a `data.frame` into `NA`.
+1. [`mc_tribble`](/R/mc_tribble.R): A dput-like output for a "tribble" for those living in the tidyverse.
 1. [`melt_wide`](/R/melt_wide.R): Reshapes double- and tripple-wide `data.table`s into longer `data.frame`s.
 1. [`moveMe`](/R/moveMe.R): Shuffles the order of a vector around using natural language statements.
 1. [`mySOreputation`](/R/mySOreputation.R): Parse your reputation page from any of the Stack Exchange sites.
