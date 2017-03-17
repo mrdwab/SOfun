@@ -18,13 +18,13 @@
 mc_tribble <- function(indf, indents = 4, mdformat = TRUE) {
   name <- as.character(substitute(indf))
   name <- name[length(name)]
+  cols <- paste0("~", names(indf), collapse = ", ")
   
-  meat <- capture.output(write.csv(indf, quote = TRUE, row.names = FALSE))
   meat <- paste0(
     paste(rep(" ", indents), collapse = ""),
-    c(paste(sprintf("~%s", names(indf)), collapse = ", "),
-      meat[-1]))
-  
+    c(cols, capture.output(
+      data.table::fwrite(indf, quote = TRUE, col.names = FALSE, sep = ","))))
+
   if (mdformat) meat <- paste0("    ", meat)
   obj <- paste(name, " <- tribble(\n", paste(meat, collapse = ",\n"), ")", sep = "")
   if (mdformat) obj <- paste0("    ", obj)
