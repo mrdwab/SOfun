@@ -9,7 +9,7 @@ word_value(words, dtOut = FALSE)
 \arguments{
 \item{words}{The input vector of words.}
 
-\item{dtOut}{Logical. Should the output be a \code{data.table} comprised of
+\item{dtOut}{Logical. Should the output be a \code{data.table} comprising
 the words and the values. Defaults to \code{FALSE}.}
 }
 \value{
@@ -27,7 +27,7 @@ to their ASCII equivalent before converting the word to a numeric value.
 \examples{
 
 myvec <- c("and", "dad", "cat", "fox", "mom", 
-           "add", "dan", "naïve", "non-descript")
+           "add", "dan", "naive", "non-descript")
 word_value(myvec)
 word_value(myvec, TRUE)
 

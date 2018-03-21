@@ -6,7 +6,7 @@
 #' \code{data.frame}, or \code{data.table}) by row.
 #' 
 #' @param indt The input dataset.
-#' @param sourc Logical. Should columns indicating the original row and column
+#' @param source Logical. Should columns indicating the original row and column
 #' positions be returned. Defaults to \code{TRUE}.
 #' @return A \code{data.table} if \code{source = TRUE} or a vector.
 #' @author Ananda Mahto

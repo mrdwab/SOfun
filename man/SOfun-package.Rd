@@ -11,7 +11,7 @@ Overflow.
 }
 \details{
 \tabular{ll}{ Package: \tab SOfun\cr Type: \tab Package\cr Version: \tab
-0.1.0\cr Date: \tab 2014-02-09\cr License: \tab CC0\cr }
+1.72\cr Date: \tab 2018-03-21\cr License: \tab CC0\cr }
 }
 \examples{
 

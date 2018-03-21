@@ -24,7 +24,7 @@
 fwf2csv <- function(infile, toDF = FALSE, ...) {
   if (infile == "clipboard") {
     infile <- tempfile()
-    writeLines(overflow:::readClip(), infile)
+    writeLines(readClip(), infile)
   }
   
   a <- tempfile()

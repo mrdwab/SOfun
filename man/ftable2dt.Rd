@@ -7,10 +7,10 @@
 ftable2dt(inarray, direction = "wide")
 }
 \arguments{
+\item{inarray}{The input \code{ftable} or \code{array}.}
+
 \item{direction}{Should the reslut be "wide" (with multiple measurement.
 columns) or "long" (with a single measurement column)? Defaults to \code{"wide"}.}
-
-\item{mydata}{The input \code{ftable} or \code{array}.}
 }
 \value{
 A \code{data.table}

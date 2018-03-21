@@ -13,7 +13,7 @@ unlist_by_col(indt, source = TRUE)
 \arguments{
 \item{indt}{The input dataset.}
 
-\item{sourc}{Logical. Should columns indicating the original row and column
+\item{source}{Logical. Should columns indicating the original row and column
 positions be returned. Defaults to \code{TRUE}.}
 }
 \value{

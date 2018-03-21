@@ -4,7 +4,7 @@
 #' for a word.
 #' 
 #' @param words The input vector of words.
-#' @param dtOut Logical. Should the output be a \code{data.table} comprised of
+#' @param dtOut Logical. Should the output be a \code{data.table} comprising
 #' the words and the values. Defaults to \code{FALSE}.
 #' @return A named numeric vector or a \code{data.table}.
 #' @author Ananda Mahto and \href{http://stackoverflow.com/users/640595/jota}{Jota}.
@@ -15,7 +15,7 @@
 #' @examples
 #' 
 #' myvec <- c("and", "dad", "cat", "fox", "mom", 
-#'            "add", "dan", "naïve", "non-descript")
+#'            "add", "dan", "naive", "non-descript")
 #' word_value(myvec)
 #' word_value(myvec, TRUE)
 #' 

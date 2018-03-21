@@ -8,7 +8,7 @@
 #' \code{matrix} with \code{attributes} for the rows and columns, which can be
 #' nested.
 #' 
-#' @param mydata The input \code{ftable} or \code{array}.
+#' @param inarray The input \code{ftable} or \code{array}.
 #' @param direction Should the reslut be "wide" (with multiple measurement.
 #' columns) or "long" (with a single measurement column)? Defaults to \code{"wide"}.
 #' @return A \code{data.table}
