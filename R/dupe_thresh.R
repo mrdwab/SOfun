@@ -7,11 +7,11 @@
 #' @param count The threshold for duplicates. See "Details".
 #' @return A vector.
 #' @author Ananda Mahto
-#' @references \url{http://stackoverflow.com/q/29973061/1270695}
-#' @details The \code{"count"} parameter can be either a single digit or a 
-#' character vector showing the desired comparison to be used as the threshold
-#' (for example "> 5"). If no binary relational operator is specified, the 
-#' relational operator used is \code{>=}.
+#' @references <http://stackoverflow.com/q/29973061/1270695>
+#' @details The `"count"` parameter can be either a single digit or a  character 
+#' vector showing the desired comparison to be used as the threshold (for 
+#' example `"> 5"`). If no binary relational operator is specified, the 
+#' relational operator used is `>=`.
 #' @examples
 #' 
 #' set.seed(1)

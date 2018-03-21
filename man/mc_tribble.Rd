@@ -2,19 +2,21 @@
 % Please edit documentation in R/mc_tribble.R
 \name{mc_tribble}
 \alias{mc_tribble}
-\title{Like "dput" for Those Confined to the Tidyverse}
+\title{Like \code{dput} for Those Confined to the Tidyverse}
 \usage{
 mc_tribble(indf, indents = 4, mdformat = TRUE)
 }
 \arguments{
 \item{indf}{The input \code{data.frame}.}
 
-\item{indents}{The number of spaces to indent each line of output. Defaults to 4.}
+\item{indents}{The number of spaces to indent each line of output. Defaults
+to \code{4}.}
 
-\item{mdformat}{Logical. Whether or not to add 4 spaces before every line in order to format as a code block.}
+\item{mdformat}{Logical. Whether or not to add 4 spaces before every line in
+order to format as a code block. Defaults to \code{TRUE}.}
 }
 \description{
-Creates a "dput"-like pasteable format that can be used to create small tables.
+Creates a \code{dput}-like pasteable format that can be used to create small tables.
 }
 \examples{
 

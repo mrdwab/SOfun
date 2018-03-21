@@ -15,13 +15,13 @@ dupe_thresh(invec, count)
 A vector.
 }
 \description{
-Filters a vector according to the number of duplicates in the vector, where 
+Filters a vector according to the number of duplicates in the vector, where
 the conditions for the acceptable number of duplicate values are specified.
 }
 \details{
-The \code{"count"} parameter can be either a single digit or a 
-character vector showing the desired comparison to be used as the threshold
-(for example "> 5"). If no binary relational operator is specified, the 
+The \code{"count"} parameter can be either a single digit or a  character
+vector showing the desired comparison to be used as the threshold (for
+example \code{"> 5"}). If no binary relational operator is specified, the
 relational operator used is \code{>=}.
 }
 \examples{

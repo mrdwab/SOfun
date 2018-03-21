@@ -11,28 +11,26 @@ almostComplete(dataset, rowPct, colPct = rowPct, n = 1)
 
 \item{rowPct}{The maximum percent of \code{NA} values in rows, as a decimal.}
 
-\item{colPct}{The maximum percent of \code{NA} values in columns, as a
-decimal.}
+\item{colPct}{The maximum percent of \code{NA} values in columns, as a decimal.}
 
-\item{n}{When \code{rowPct} and \code{colPct} are \code{NULL}, the function
-will drop at least the number of rows and columns specified here, by "rank",
-if any contain \code{NA}. See "Details".}
+\item{n}{When \code{rowPct} and \code{colPct} are \code{NULL}, the function will drop at
+least the number of rows and columns specified here, by "rank", if any
+contain \code{NA}. See "Details".}
 }
 \value{
 A \code{data.frame}
 }
 \description{
-An alternate to \code{\link{complete.cases}} that lets you specify the
+An alternative to \code{\link[stats:complete.cases]{stats::complete.cases()}} that lets you specify the
 percentage of completeness desired.
 }
 \details{
-When \code{n} is specified and \code{rowPct} and \code{colPct} are
-\code{NULL}, the function calculates the number of \code{NA} values by row
-and column. By default, it then drops the rows and columns with the highest
-number of missing values. With the dataset in the \emph{Examples} section,
-if you use \code{n = 2}, the function will remove rows 1, 3, and 6 and
-columns A, B, C, and F. Compare this behavior with the results of
-\code{rowSums(is.na(mydf))} and \code{colSums(is.na(mydf))}.
+When \code{n} is specified and \code{rowPct} and \code{colPct} are \code{NULL}, the function
+calculates the number of \code{NA} values by row and column. By default, it then
+drops the rows and columns with the highest number of missing values. With
+the dataset in the \emph{Examples} section, if you use \code{n = 2}, the function will
+remove rows 1, 3, and 6 and columns A, B, C, and F. Compare this behavior
+with the results of \code{rowSums(is.na(mydf))} and \code{colSums(is.na(mydf))}.
 }
 \examples{
 

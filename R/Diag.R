@@ -1,12 +1,12 @@
 #' Extract the Values at the Diagonal of a Matrix
 #' 
-#' A faster version of \code{\link{diag}} (on larger matrices).
+#' A faster version of [base::diag()] (on larger matrices).
 #' 
 #' 
 #' @param inMatrix The input matrix
 #' @return A vector
 #' @author Ananda Mahto
-#' @references \url{http://stackoverflow.com/a/20489737/1270695}
+#' @references <http://stackoverflow.com/a/20489737/1270695>
 #' @examples
 #' 
 #' set.seed(1)

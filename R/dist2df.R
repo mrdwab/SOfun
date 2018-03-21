@@ -1,11 +1,11 @@
 #' Converts a Distance Matrix to a data.frame
 #' 
-#' Converts a distance matrix to a \code{data.frame}.
+#' Converts a distance matrix to a `data.frame`.
 #' 
 #' @param inDist The input distance object.
-#' @return A \code{data.frame}.
+#' @return A `data.frame`.
 #' @author Ananda Mahto
-#' @references \url{http://stackoverflow.com/q/23474729/1270695}
+#' @references <http://stackoverflow.com/q/23474729/1270695>
 #' @examples
 #' 
 #' dd <- as.dist((1 - cor(USJudgeRatings)[1:5, 1:5])/2)

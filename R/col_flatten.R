@@ -4,13 +4,13 @@
 #' 
 #' @description Converts list columns into separate columns or into a long form.
 #' 
-#' @param indt The input \code{data.table}.
+#' @param indt The input `data.table`.
 #' @param cols Character vector containing the names of list columns
 #' @param drop Logical. Should the list columns be dropped from the original 
-#' \code{data.table}?
-#' @return A \code{data.table}.
+#' `data.table`?
+#' @return A `data.table`.
 #' @author Ananda Mahto
-#' @references \url{http://stackoverflow.com/q/34206003/1270695}
+#' @references <http://stackoverflow.com/q/34206003/1270695>
 NULL
 
 #' @rdname col_flatten

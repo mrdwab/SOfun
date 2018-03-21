@@ -1,18 +1,18 @@
 #' Extracting Information from an Array
 #' 
-#' Uses a \code{list} of the same length as the dimensions of an array to extract
+#' Uses a `list` of the same length as the dimensions of an array to extract
 #' information, similar to using matrix indexing.
 #' 
 #' @param inarray The input array.
-#' @param valslist A list of vectors to use to extract data. A value of \code{NULL}
+#' @param valslist A list of vectors to use to extract data. A value of `NULL`
 #' for any of the list elements will return all values for that dimension.
 #' @return An array.
 #' @author Ananda Mahto
-#' @references \url{http://stackoverflow.com/q/34795331/1270695}
-#' @note The \code{list} used for \code{valslist} must be the same length as the
-#' number of dimensions in the array. It must also be specified in the same order
-#' as you would normally reference the dimensions of an array. For instance, in
-#' the example, the array has row dimensions, column dimensions, and a third
+#' @references <http://stackoverflow.com/q/34795331/1270695>
+#' @note The `list` used for `valslist` must be the same length as the number of 
+#' dimensions in the array. It must also be specified in the same order as you 
+#' would normally reference the dimensions of an array. For instance, in the 
+#' example, the array has row dimensions, column dimensions, and a third 
 #' dimension. 
 #' @examples
 #' 

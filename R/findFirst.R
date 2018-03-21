@@ -8,7 +8,7 @@
 #' @param event The desired position to be returned.
 #' @return A vector of length 1.
 #' @author Ananda Mahto
-#' @references \url{http://stackoverflow.com/q/22049035/1270695}
+#' @references <http://stackoverflow.com/q/22049035/1270695>
 #' @examples
 #' 
 #' set.seed(1)

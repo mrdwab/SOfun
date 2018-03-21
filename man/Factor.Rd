@@ -26,16 +26,15 @@ level and the values are what should be mapped to those levels.}
 \item{x}{The object to be printed.}
 }
 \value{
-A factored variable with \code{class} of \code{factor} and
-\code{Factor}, optionally with an \code{attribute} of \code{"Input"} which
-stores the original input values.
+A factored variable with \code{class} of \code{factor} and \code{Factor}, optionally
+with an \code{attribute} of \code{"Input"} which stores the original input values.
 }
 \description{
-\code{\link{factor}} does not let you use duplicated levels 
-nicely. It results in an ugly warning message and you need to use
-\code{\link{droplevels}} to get the desired output. The "solution" is to 
-first factor the vector, and then use a named \code{list} with the 
-\code{\link{levels}} function. This function is a wrapper around those steps.
+\code{\link[base:factor]{base::factor()}} does not let you use duplicated levels nicely.
+It results in an ugly warning message and you need to use \code{\link[base:droplevels]{base::droplevels()}}
+to get the desired output. The "solution" is to first factor the vector, and
+then use a named \code{list} with the \code{\link[base:levels]{base::levels()}} function. This function is
+a wrapper around those steps.
 }
 \examples{
 
@@ -52,7 +51,7 @@ RestoreFactor(y)
 \url{http://stackoverflow.com/a/19410249/1270695}
 }
 \seealso{
-\code{\link{factor}}, \code{\link{levels}}
+\code{\link[base:factor]{base::factor()}}, \code{\link[base:levels]{base::levels()}}
 }
 \author{
 Ananda Mahto

@@ -16,16 +16,15 @@ columns) or "long" (with a single measurement column)? Defaults to \code{"wide"}
 A \code{data.table}
 }
 \description{
-While convenient methods exist for converting \code{table}s and 
-other objects to \code{data.tables}s, such methods do not exist for converting 
-an \code{ftable} to a \code{data.table}. An \code{ftable} is essentially a
-\code{matrix} with \code{attributes} for the rows and columns, which can be
-nested.
+While convenient methods exist for converting \code{table}s and other
+objects to \code{data.tables}s, such methods do not exist for converting an
+\code{ftable} to a \code{data.table}. An \code{ftable} is essentially a \code{matrix} with
+\code{attributes} for the rows and columns, which can be nested.
 }
 \note{
 If the array has no \code{dimnames}, names would be added using the
-\code{provideDimnames} function. Defaults to \code{reshape2::melt} if the
-input is a simple matrix and not a multidimensional array.
+\code{provideDimnames} function. Defaults to \code{\link[reshape2:melt]{reshape2::melt()}} if the input is a
+simple matrix and not a multidimensional array.
 }
 \examples{
 
@@ -38,8 +37,10 @@ ftable2dt(x, direction = "long")
 dims <- c(2, 1, 2, 3, 2)
 set.seed(1)
 M <- `dim<-`(sample(100, prod(dims), TRUE), dims)
-N <- O <- `dimnames<-`(M, lapply(dims, function(x) c(letters, LETTERS)[seq_len(x)]))
-names(attributes(O)$dimnames) <- c("first", "second", "third", "fourth", "fifth")
+N <- O <- `dimnames<-`(M, lapply(dims, function(x) 
+                                 c(letters, LETTERS)[seq_len(x)]))
+names(attributes(O)$dimnames) <- c("first", "second", "third", 
+                                   "fourth", "fifth")
 
 ftable2dt(M)
 ftable2dt(N)

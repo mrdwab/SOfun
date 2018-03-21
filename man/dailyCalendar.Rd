@@ -12,7 +12,7 @@ dailyCalendar(startDate = Sys.Date(), days = 30, startOn = "Monday",
   fancy = FALSE)
 }
 \arguments{
-\item{startOn}{The day of the week to start on. Defaults to "Monday".}
+\item{startOn}{The day of the week to start on. Defaults to \code{"Monday"}.}
 
 \item{abbreviate}{Logical. Should the result be the abbreviated weekday name?
 Defaults to \code{FALSE}.}
@@ -20,14 +20,14 @@ Defaults to \code{FALSE}.}
 \item{startDate}{What should be the first date in the calendar? Defaults to
 \code{Sys.Date()}.}
 
-\item{days}{How many days do you want in your calendar? Defaults to 30.}
+\item{days}{How many days do you want in your calendar? Defaults to \code{30}.}
 
 \item{fancy}{Logical. Should a more nicely formatted version of the calendar
 be displayed? Defaults to \code{FALSE}.}
 }
 \value{
-A vector, a \code{data.frame}, or a \code{list}, depending on which
-function is called with what arguments.
+A vector, a \code{data.frame}, or a \code{list}, depending on which function is
+called with what arguments.
 }
 \description{
 Creates a daily calendar in R.

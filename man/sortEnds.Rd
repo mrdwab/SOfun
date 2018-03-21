@@ -17,11 +17,11 @@ sortEnds(invec, n, where = "head")
 A sorted vector of length-n
 }
 \description{
-Takes "n" values from the head or tail of a sorted vector. Utilizes the 
-"partial" argument from `sort` for increased efficiency.
+Takes "n" values from the head or tail of a sorted vector. Utilizes the
+"partial" argument from \code{sort} for increased efficiency.
 }
 \note{
-The \code{"tail"}  approach may not be consideraby faster than 
+The \code{"tail"}  approach may not be consideraby faster than
 the standard approach.
 }
 \examples{

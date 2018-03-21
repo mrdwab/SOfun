@@ -15,7 +15,8 @@ CharNumSplit(string, alphaFirst = TRUE)
 A \code{list} with the split values.
 }
 \description{
-A convenience function for the `perl = TRUE` patterns for \code{"(?<=[a-zA-Z])(?=[0-9])"} and \code{"(?<=[0-9])(?=[a-zA-Z])"}. That's it. Really.
+A convenience function for the \code{perl = TRUE} patterns for
+\code{"(?<=[a-zA-Z])(?=[0-9])"} and \code{"(?<=[0-9])(?=[a-zA-Z])"}. That's it. Really.
 }
 \examples{
 

@@ -16,8 +16,8 @@ A named integer vector. There is a bin for each of the values 1, ..., nbins.
 Modifies tabulate to work with non-positive integers too.
 }
 \note{
-The behavior on non-integers might be somewhat unpredictable, but should 
-be somewhat like using `table(cut(...))` with breaks being from the minimum
+The behavior on non-integers might be somewhat unpredictable, but should
+be somewhat like using \code{table(cut(...))} with breaks being from the minimum
 to the maximum + 1. See the "Examples" section.
 }
 \examples{

@@ -43,6 +43,6 @@ shuffler(letters[1:10])
 \author{
 Ananda Mahto
 
-Maintainer: <ananda@mahto.info> Ananda Mahto
+Maintainer: \href{mailto:ananda@mahto.info}{ananda@mahto.info} Ananda Mahto
 }
 \keyword{package}

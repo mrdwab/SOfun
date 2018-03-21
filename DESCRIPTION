@@ -12,6 +12,7 @@ Description: Nothing special. A very incohesive collection of functions, that's
     from here and struck out on the README file.
 License: CC0
 RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
 Imports: Hmisc,
     data.table,
     stringr,

@@ -3,11 +3,10 @@
 #' Create adjacent combinations of the elements of a vector, varying the length
 #' with each iteration.
 #' 
-#' 
 #' @param invec The input vector
-#' @return A \code{list} of vectors
+#' @return A `list` of vectors
 #' @author Ananda Mahto
-#' @references \url{http://stackoverflow.com/a/20157957/1270695}
+#' @references <http://stackoverflow.com/a/20157957/1270695>
 #' @examples
 #' 
 #' adjCombos(letters[1:5])

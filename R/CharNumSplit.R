@@ -1,12 +1,13 @@
 #' Split Vectors in the Form of Numbers+Characters or Characters+Numbers into Respective Parts
 #' 
-#' A convenience function for the `perl = TRUE` patterns for \code{"(?<=[a-zA-Z])(?=[0-9])"} and \code{"(?<=[0-9])(?=[a-zA-Z])"}. That's it. Really.
+#' A convenience function for the `perl = TRUE` patterns for 
+#' `"(?<=[a-zA-Z])(?=[0-9])"` and `"(?<=[0-9])(?=[a-zA-Z])"`. That's it. Really.
 #' 
 #' @param string The string to be split.
-#' @param alphaFirst Logical. Characters first (\code{TRUE})? Or numbers (\code{FALSE})?
-#' @return A \code{list} with the split values.
+#' @param alphaFirst Logical. Characters first (`TRUE`)? Or numbers (`FALSE`)?
+#' @return A `list` with the split values.
 #' @author Ananda Mahto
-#' @references \url{http://stackoverflow.com/a/23052016/1270695}
+#' @references <http://stackoverflow.com/a/23052016/1270695>
 #' @examples
 #' 
 #' STR1 <- c("ABC123", "BCD234", "CDE345", "DEF456")

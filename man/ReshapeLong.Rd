@@ -9,7 +9,7 @@ ReshapeLong(indt, stubs, sep = NULL)
 \arguments{
 \item{indt}{The input \code{data.table}.}
 
-\item{stubs}{Character vector containing the uniquely identifying stub 
+\item{stubs}{Character vector containing the uniquely identifying stub
 portion of the variable names.}
 
 \item{sep}{Not presently used.}
@@ -18,7 +18,7 @@ portion of the variable names.}
 A \code{data.table}.
 }
 \description{
-Reshapes data with multiple measurements in a wide format into 
+Reshapes data with multiple measurements in a wide format into
 a long format with one column per measurement type.
 }
 \examples{

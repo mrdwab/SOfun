@@ -2,14 +2,14 @@
 #' 
 #' Uses awk to convert a fixed-width file to a CSV based on stacks of whitespace.
 #' 
-#' @param infile The input file. Can also be \code{"clipboard"} to read directly
+#' @param infile The input file. Can also be `"clipboard"` to read directly
 #' from the clipboard.
 #' @param toDF Logical. Should the file be read in while we are at it? Defaults
-#' to \code{FALSE}.
-#' @param \dots Other arguments to be passed to \code{read.table}.
-#' @return A vector or a \code{data.frame}, depending on the value in \code{toDF}.
-#' @author Ananda Mahto and \href{http://stackoverflow.com/users/1745001/ed-morton}{Ed Morton}.
-#' @references \url{http://stackoverflow.com/q/30868600/1270695}
+#' to `FALSE`.
+#' @param \dots Other arguments to be passed to `read.table`.
+#' @return A vector or a `data.frame`, depending on the value in `toDF`.
+#' @author Ananda Mahto and [Ed Morton](http://stackoverflow.com/users/1745001/ed-morton).
+#' @references <http://stackoverflow.com/q/30868600/1270695>
 #' @note Only tested on Linux.
 #' @examples
 #' 

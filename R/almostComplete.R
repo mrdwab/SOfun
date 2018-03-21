@@ -1,26 +1,24 @@
-#' Subset a \code{data.frame} by Completeness of Rows or Columns
+#' Subset a `data.frame` by Completeness of Rows or Columns
 #' 
-#' An alternate to \code{\link{complete.cases}} that lets you specify the
+#' An alternative to [stats::complete.cases()] that lets you specify the
 #' percentage of completeness desired.
 #' 
-#' When \code{n} is specified and \code{rowPct} and \code{colPct} are
-#' \code{NULL}, the function calculates the number of \code{NA} values by row
-#' and column. By default, it then drops the rows and columns with the highest
-#' number of missing values. With the dataset in the \emph{Examples} section,
-#' if you use \code{n = 2}, the function will remove rows 1, 3, and 6 and
-#' columns A, B, C, and F. Compare this behavior with the results of
-#' \code{rowSums(is.na(mydf))} and \code{colSums(is.na(mydf))}.
+#' When `n` is specified and `rowPct` and `colPct` are `NULL`, the function 
+#' calculates the number of `NA` values by row and column. By default, it then 
+#' drops the rows and columns with the highest number of missing values. With 
+#' the dataset in the *Examples* section, if you use `n = 2`, the function will 
+#' remove rows 1, 3, and 6 and columns A, B, C, and F. Compare this behavior 
+#' with the results of `rowSums(is.na(mydf))` and `colSums(is.na(mydf))`.
 #' 
-#' @param dataset The input \code{data.frame}
-#' @param rowPct The maximum percent of \code{NA} values in rows, as a decimal.
-#' @param colPct The maximum percent of \code{NA} values in columns, as a
-#' decimal.
-#' @param n When \code{rowPct} and \code{colPct} are \code{NULL}, the function
-#' will drop at least the number of rows and columns specified here, by "rank",
-#' if any contain \code{NA}. See "Details".
-#' @return A \code{data.frame}
+#' @param dataset The input `data.frame`
+#' @param rowPct The maximum percent of `NA` values in rows, as a decimal.
+#' @param colPct The maximum percent of `NA` values in columns, as a decimal.
+#' @param n When `rowPct` and `colPct` are `NULL`, the function will drop at 
+#' least the number of rows and columns specified here, by "rank", if any 
+#' contain `NA`. See "Details".
+#' @return A `data.frame`
 #' @author Ananda Mahto
-#' @references \url{http://stackoverflow.com/a/20475029/1270695}
+#' @references <http://stackoverflow.com/a/20475029/1270695>
 #' @examples
 #' 
 #' mydf <- read.csv(text="

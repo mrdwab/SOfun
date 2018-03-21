@@ -20,10 +20,10 @@ Uses a \code{list} of the same length as the dimensions of an array to extract
 information, similar to using matrix indexing.
 }
 \note{
-The \code{list} used for \code{valslist} must be the same length as the
-number of dimensions in the array. It must also be specified in the same order
-as you would normally reference the dimensions of an array. For instance, in
-the example, the array has row dimensions, column dimensions, and a third
+The \code{list} used for \code{valslist} must be the same length as the number of
+dimensions in the array. It must also be specified in the same order as you
+would normally reference the dimensions of an array. For instance, in the
+example, the array has row dimensions, column dimensions, and a third
 dimension.
 }
 \examples{

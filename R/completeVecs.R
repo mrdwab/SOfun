@@ -1,4 +1,4 @@
-#' Extract the \code{complete.cases} for a Set of Vectors
+#' Extract the `complete.cases` for a Set of Vectors
 #' 
 #' Takes vectors as input and outputs a matrix of the complete cases across
 #' these vectors.
@@ -10,7 +10,7 @@
 #' different lengths, you should decide whether this is a desirable behavior or
 #' not before using this function.
 #' @author Ananda Mahto
-#' @references \url{http://stackoverflow.com/a/20146003/1270695}
+#' @references <http://stackoverflow.com/a/20146003/1270695>
 #' @examples
 #' 
 #' A <- c(12, 8, 11, 9, NA, NA, NA)

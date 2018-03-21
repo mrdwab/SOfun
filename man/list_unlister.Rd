@@ -7,10 +7,10 @@
 list_unlister(indt, addRN = TRUE)
 }
 \arguments{
-\item{indt}{The input \code{data.table}. The input can also be a \code{list}, 
+\item{indt}{The input \code{data.table}. The input can also be a \code{list},
 possibly with elements of different lengths.}
 
-\item{addRN}{Logical. Should a column named "rn" be added to the 
+\item{addRN}{Logical. Should a column named "rn" be added to the
 \code{data.table}? Such a column is required, so if it does not already exist,
 it is suggested to keep this set to \code{TRUE}, the default.}
 }

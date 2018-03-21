@@ -4,15 +4,15 @@
 #' 
 #' @description Creates a daily calendar in R.
 
-#' @return A vector, a \code{data.frame}, or a \code{list}, depending on which
-#' function is called with what arguments.
+#' @return A vector, a `data.frame`, or a `list`, depending on which function is 
+#' called with what arguments.
 #' @author Ananda Mahto
 NULL
 
 #' @rdname dailyCalendar
-#' @param startOn The day of the week to start on. Defaults to "Monday".
+#' @param startOn The day of the week to start on. Defaults to `"Monday"`.
 #' @param abbreviate Logical. Should the result be the abbreviated weekday name?
-#' Defaults to \code{FALSE}.
+#' Defaults to `FALSE`.
 #' @examples
 #' WeekDays()
 #' WeekDays("Thursday", TRUE)
@@ -30,10 +30,10 @@ NULL
 
 #' @rdname dailyCalendar
 #' @param startDate What should be the first date in the calendar? Defaults to
-#' \code{Sys.Date()}.
-#' @param days How many days do you want in your calendar? Defaults to 30.
+#' `Sys.Date()`.
+#' @param days How many days do you want in your calendar? Defaults to `30`.
 #' @param fancy Logical. Should a more nicely formatted version of the calendar
-#' be displayed? Defaults to \code{FALSE}.
+#' be displayed? Defaults to `FALSE`.
 #' @examples
 #' dailyCalendar(startDate = "2013-12-27", days = 10)
 #' dailyCalendar(startDate = "2013-12-27", days = 10, startOn = "Friday")

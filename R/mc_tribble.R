@@ -1,12 +1,14 @@
-#' Like "dput" for Those Confined to the Tidyverse
+#' Like `dput` for Those Confined to the Tidyverse
 #' 
-#' Creates a "dput"-like pasteable format that can be used to create small tables.
+#' Creates a `dput`-like pasteable format that can be used to create small tables.
 #' 
-#' @param indf The input \code{data.frame}.
-#' @param indents The number of spaces to indent each line of output. Defaults to 4.
-#' @param mdformat Logical. Whether or not to add 4 spaces before every line in order to format as a code block.
-#' @author Ananda Mahto. Name courtesy of \href{https://stackoverflow.com/users/1191259/frank}{Frank}.
-#' @references \url{http://stackoverflow.com/q/42839626/1270695}
+#' @param indf The input `data.frame`.
+#' @param indents The number of spaces to indent each line of output. Defaults 
+#' to `4`.
+#' @param mdformat Logical. Whether or not to add 4 spaces before every line in 
+#' order to format as a code block. Defaults to `TRUE`.
+#' @author Ananda Mahto. Name courtesy of [Frank](https://stackoverflow.com/users/1191259/frank).
+#' @references <http://stackoverflow.com/q/42839626/1270695>
 #' @examples
 #' 
 #' \dontrun{
@@ -28,6 +30,6 @@ mc_tribble <- function(indf, indents = 4, mdformat = TRUE) {
   if (mdformat) meat <- paste0("    ", meat)
   obj <- paste(name, " <- tribble(\n", paste(meat, collapse = ",\n"), ")", sep = "")
   if (mdformat) obj <- paste0("    ", obj)
-  overflow:::writeClip(obj)
+  writeClip(obj)
   cat(obj)
 }

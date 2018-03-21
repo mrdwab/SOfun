@@ -7,15 +7,13 @@
 clc(all = FALSE)
 }
 \arguments{
-\item{all}{Logical. Should hidden objects also be removed? Defaults to
-\code{FALSE}.}
+\item{all}{Logical. Should hidden objects also be removed? Defaults to \code{FALSE}.}
 }
 \value{
 Nothing
 }
 \description{
-A slightly more elaborate version of \code{rm(list = ls())} to clear your
-workspace.
+A slightly more elaborate version of \code{rm(list = ls())} to clear your workspace.
 }
 \examples{
 

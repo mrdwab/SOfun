@@ -13,7 +13,7 @@ Diag(inMatrix)
 A vector
 }
 \description{
-A faster version of \code{\link{diag}} (on larger matrices).
+A faster version of \code{\link[base:diag]{base::diag()}} (on larger matrices).
 }
 \examples{
 

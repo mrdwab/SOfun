@@ -15,7 +15,7 @@ col_flattenLong(indt, cols)
 
 \item{cols}{Character vector containing the names of list columns}
 
-\item{drop}{Logical. Should the list columns be dropped from the original 
+\item{drop}{Logical. Should the list columns be dropped from the original
 \code{data.table}?}
 }
 \value{

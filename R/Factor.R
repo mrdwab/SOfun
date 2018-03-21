@@ -2,24 +2,23 @@
 #' @rdname Factor
 #' @title Factor Vectors with Multiple Levels
 #' 
-#' @description \code{\link{factor}} does not let you use duplicated levels 
-#' nicely. It results in an ugly warning message and you need to use
-#' \code{\link{droplevels}} to get the desired output. The "solution" is to 
-#' first factor the vector, and then use a named \code{list} with the 
-#' \code{\link{levels}} function. This function is a wrapper around those steps.
+#' @description [base::factor()] does not let you use duplicated levels nicely. 
+#' It results in an ugly warning message and you need to use [base::droplevels()] 
+#' to get the desired output. The "solution" is to first factor the vector, and 
+#' then use a named `list` with the [base::levels()] function. This function is 
+#' a wrapper around those steps.
 #' 
-#' @param invec A \code{vector} that needs to be factored.
-#' @param levels A named \code{list} of the levels. The \code{name} is the
+#' @param invec A `vector` that needs to be factored.
+#' @param levels A named `list` of the levels. The `name` is the
 #' level and the values are what should be mapped to those levels.
 #' @param store Logical. Should the input values be stored as an attribute?
-#' @param \dots Additional arguments to \code{factor}.
+#' @param \dots Additional arguments to `factor`.
 #' @param x The object to be printed.
-#' @return A factored variable with \code{class} of \code{factor} and
-#' \code{Factor}, optionally with an \code{attribute} of \code{"Input"} which
-#' stores the original input values.
+#' @return A factored variable with `class` of `factor` and `Factor`, optionally 
+#' with an `attribute` of `"Input"` which stores the original input values.
 #' @author Ananda Mahto
-#' @seealso \code{\link{factor}}, \code{\link{levels}}
-#' @references \url{http://stackoverflow.com/a/19410249/1270695}
+#' @seealso [base::factor()], [base::levels()]
+#' @references <http://stackoverflow.com/a/19410249/1270695>
 NULL
 
 #' @rdname Factor
