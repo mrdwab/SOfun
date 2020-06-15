@@ -44,7 +44,7 @@ NULL
 #' @rdname ragged
 #' @export
 #' @param x The object to be printed.
-print.ragged <- function(x, ...) {
+print.ragged <- function(x) {
   print(x$out)
 }
 NULL
