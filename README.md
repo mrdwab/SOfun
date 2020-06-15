@@ -45,6 +45,7 @@ The "SOfun" package is filled with a very strongly cohesive set of functions, as
 1. [`mySOreputation`](/R/mySOreputation.R): Parse your reputation page from any of the Stack Exchange sites.
 1. [`naLast`](/R/naLast.R): Moves `NA` values in columns or rows to the end of their columns or rows.
 1. [`needleInHaystack`](/R/needleInHaystack.R): Finds a needle in a haystack.
+1. [`ragged`](/R/ragged.R): Displays a `data.frame` with ragged keys/grouping variables.
 1. [`read.mtable`](/R/read.mtable.R): Reads files that have multiple tables in one go.
 1. [`ReshapeLong`](/R/ReshapeLong.R): Reshapes data with multiple measurements in a wide format into a long format with one column per measurement type.
 1. [`Riffle`](/R/Riffle.R): Like the `riffle` function from Mathematica, sort of.
