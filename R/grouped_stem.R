@@ -78,6 +78,7 @@ NULL
 #' @rdname grouped_stem
 #' @export
 #' @param x The object to be printed.
+#' @param \dots Not used.
 #' @aliases print.grouped_stem
 print.grouped_stem <- function(x, ...) {
   cat(sprintf(sprintf("%%%ss | %%s", max(nchar(names(x)))+2), 

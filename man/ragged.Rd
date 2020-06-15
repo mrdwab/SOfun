@@ -17,6 +17,8 @@ ragged(indt, keys, blank = "")
 \item{blank}{The character to print to show nesting. Defaults to "".}
 
 \item{x}{The object to be printed.}
+
+\item{\dots}{Not used.}
 }
 \value{
 A \code{list} with a "ragged" object and the sorted \code{data.table}. The custom

@@ -44,6 +44,7 @@ NULL
 #' @rdname ragged
 #' @export
 #' @param x The object to be printed.
+#' @param \dots Not used.
 print.ragged <- function(x, ...) {
   print(x$out)
 }
@@ -56,3 +57,5 @@ NULL
   out
 }
 NULL
+
+#' @importFrom ggplot2 diamonds

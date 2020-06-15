@@ -15,6 +15,8 @@ grouped_stem(invec, n = 2)
 \item{n}{The number of stem values to be grouped}
 
 \item{x}{The object to be printed.}
+
+\item{\dots}{Not used.}
 }
 \value{
 A \code{list} printed with stem-and-leaf formatting
