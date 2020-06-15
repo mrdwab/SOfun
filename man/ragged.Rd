@@ -7,7 +7,7 @@
 \usage{
 ragged(indt, keys, blank = "")
 
-\method{print}{ragged}(x)
+\method{print}{ragged}(x, ...)
 }
 \arguments{
 \item{indt}{The input \code{data.frame} or \code{data.table}}
@@ -38,8 +38,7 @@ stringsAsFactors = FALSE)
 
 ragged(before, c("C1", "C2"))
 ragged(before, names(before), ":")
-data(diamonds, package = "ggplot2")
-ragged(head(diamonds, 30), c("cut", "color"), ":")[, mean(price), .(cut, color)]
+ragged(head(ggplot2::diamonds, 30), c("cut", "color"), ":")[, mean(price), .(cut, color)]
 
 }
 \references{

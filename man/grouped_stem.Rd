@@ -7,7 +7,7 @@
 \usage{
 grouped_stem(invec, n = 2)
 
-\method{print}{grouped_stem}(x)
+\method{print}{grouped_stem}(x, ...)
 }
 \arguments{
 \item{invec}{The input vector. This function only works with integers.}

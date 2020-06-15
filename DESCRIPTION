@@ -18,4 +18,6 @@ Imports: Hmisc,
     stringr,
     XML,
     utils
-Suggests: reshape2
+Suggests: reshape2,
+    ggplot2
+Encoding: UTF-8

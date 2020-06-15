@@ -21,8 +21,7 @@
 #' 
 #' ragged(before, c("C1", "C2"))
 #' ragged(before, names(before), ":")
-#' data(diamonds, package = "ggplot2")
-#' ragged(head(diamonds, 30), c("cut", "color"), ":")[, mean(price), .(cut, color)]
+#' ragged(head(ggplot2::diamonds, 30), c("cut", "color"), ":")[, mean(price), .(cut, color)]
 #' 
 #' @export ragged
 ragged <- function(indt, keys, blank = "") {
@@ -57,5 +56,3 @@ NULL
   out
 }
 NULL
-
-#' @importFrom ggplot2 diamonds
