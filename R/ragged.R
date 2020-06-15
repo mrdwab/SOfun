@@ -40,6 +40,8 @@ ragged <- function(indt, keys, blank = "") {
 }
 NULL
 
+utils::globalVariables(c("..nams", "..vals"))
+
 #' @rdname ragged
 #' @export
 #' @param x The object to be printed.
