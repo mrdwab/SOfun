@@ -2,7 +2,6 @@
 % Please edit documentation in R/unlist_by_row.R
 \name{unlist_by_row}
 \alias{unlist_by_row}
-\alias{unlist_by_row}
 \alias{unlist_by_col}
 \title{Unlists the Values in a Rectangular Dataset by Row or Column}
 \usage{

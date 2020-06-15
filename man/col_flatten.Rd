@@ -2,7 +2,6 @@
 % Please edit documentation in R/col_flatten.R
 \name{col_flatten}
 \alias{col_flatten}
-\alias{col_flatten}
 \alias{col_flattenLong}
 \title{Flatten List Columns into a Wide or Long Form}
 \usage{

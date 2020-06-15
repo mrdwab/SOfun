@@ -31,7 +31,7 @@ likely to be syntactically valid R names.
 x <- tempfile()
 cat("'Experiment Name: Here Be',,", "1,2,3", "4,5,6", "7,8,9",
     "'Experiment Name: The Dragons',,", "10,11,12", "13,14,15",
-    "16,17,18", file = x, sep = "\\n")
+    "16,17,18", file = x, sep = "\n")
 
 read.mtable(x, "Experi", sep = ",")
 
@@ -43,7 +43,7 @@ cat("Header: Boston city data",
     "Month    Data1    Data2    Data3",
     "1        1.5      9.1342   8.1231",
     "2        12.3     12.31    1.129",
-    file = x, sep = "\\n")
+    file = x, sep = "\n")
 
 read.mtable(x, "Header", header = TRUE)
 

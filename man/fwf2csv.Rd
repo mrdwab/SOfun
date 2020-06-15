@@ -28,8 +28,8 @@ Only tested on Linux.
 
 myfile <- tempfile(fileext = ".txt")
 Lines <- c("aaa  b b ccc      345", "ddd  fgt f u      3456", "e r  der der      5 674")
-cat(Lines, sep = "\\n")
-cat(Lines, sep = "\\n", file = myfile)
+cat(Lines, sep = "\n")
+cat(Lines, sep = "\n", file = myfile)
 fwf2csv(myfile)
 fwf2csv(myfile, TRUE, header = FALSE)
  

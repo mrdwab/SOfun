@@ -2,7 +2,6 @@
 % Please edit documentation in R/Factor.R
 \name{Factor}
 \alias{Factor}
-\alias{Factor}
 \alias{print.Factor}
 \alias{RestoreFactor}
 \title{Factor Vectors with Multiple Levels}

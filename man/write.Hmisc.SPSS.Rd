@@ -45,8 +45,8 @@ df
 x <- setwd(tempdir())
 list.files()
 write.Hmisc.SPSS(df, "df.sav", "df.sps")
-cat(readLines("df.sav"), sep = "\\n")
-cat(readLines("df.sps"), sep = "\\n")
+cat(readLines("df.sav"), sep = "\n")
+cat(readLines("df.sps"), sep = "\n")
 file.remove("df.sav", "df.sps")
 setwd(x)
 

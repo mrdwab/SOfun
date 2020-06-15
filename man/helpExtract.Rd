@@ -44,7 +44,7 @@ options = list(tidy = FALSE, eval = FALSE))}}
 }
 \examples{
 
-cat(helpExtract(cor), sep = "\\n")
+cat(helpExtract(cor), sep = "\n")
 
 cat(helpExtract(cor, type = "m_text"))
 

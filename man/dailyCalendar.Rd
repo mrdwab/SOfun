@@ -3,13 +3,16 @@
 \name{dailyCalendar}
 \alias{dailyCalendar}
 \alias{WeekDays}
-\alias{dailyCalendar}
 \title{Creates a Calendar in R}
 \usage{
 WeekDays(startOn = "Monday", abbreviate = FALSE)
 
-dailyCalendar(startDate = Sys.Date(), days = 30, startOn = "Monday",
-  fancy = FALSE)
+dailyCalendar(
+  startDate = Sys.Date(),
+  days = 30,
+  startOn = "Monday",
+  fancy = FALSE
+)
 }
 \arguments{
 \item{startOn}{The day of the week to start on. Defaults to \code{"Monday"}.}

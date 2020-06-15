@@ -4,8 +4,13 @@
 \alias{SampleToSum}
 \title{Sample from a Specific Range with a Target Vector Sum}
 \usage{
-SampleToSum(Target = 100, VecLen = 10, InRange = 1:100, Tolerance = 2,
-  showSum = TRUE)
+SampleToSum(
+  Target = 100,
+  VecLen = 10,
+  InRange = 1:100,
+  Tolerance = 2,
+  showSum = TRUE
+)
 }
 \arguments{
 \item{Target}{The value that the vector should \code{sum} to}
