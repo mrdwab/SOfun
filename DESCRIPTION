@@ -1,7 +1,7 @@
 Package: SOfun
 Type: Package
 Title: Functions From Answers to R Questions on Stack Overflow
-Version: 1.74
+Version: 1.75
 Date: 2020-06-14
 Authors@R: c(person("Ananda", "Mahto", email = "ananda@mahto.info",
              role = c("aut", "cre")),
