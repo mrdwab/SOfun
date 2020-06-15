@@ -21,7 +21,8 @@
 #' V3 = list(c("a", "b"), "c", "d", c("e", "f"), c("g", "h", "i")))
 #' list_unlister(L2)
 #' 
-#' DT <- data.frame(x1 = list("A", c("A", "B"), "X", NULL, c("Z", "W")),
+#' DT <- data.table::data.table(
+#' x1 = list("A", c("A", "B"), "X", NULL, c("Z", "W")),
 #' x2 = list(1, c(1, 2, 3), c(1, 2), c(1, 2, 3, 4), 1),
 #' x3 = list(c("a", "b"), "c", "d", c("e", "f"), c("g", "h", "i")))
 #' list_unlister(DT)
