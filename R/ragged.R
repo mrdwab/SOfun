@@ -47,7 +47,7 @@ utils::globalVariables(c("..nams", "..vals"))
 #' @param x The object to be printed.
 #' @param \dots Not used.
 print.ragged <- function(x, ...) {
-  print(x$out)
+  print(x$out, ...)
 }
 NULL
 
