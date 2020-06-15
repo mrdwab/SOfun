@@ -14,7 +14,7 @@ sortEnds(invec, n, where = "head")
 \item{where}{Either \code{"head"} or \code{"tail"}.}
 }
 \value{
-A sorted vector of length-n
+A sorted vector of length = n
 }
 \description{
 Takes "n" values from the head or tail of a sorted vector. Utilizes the

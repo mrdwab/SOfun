@@ -6,7 +6,7 @@
 #' @param invec The input vector
 #' @param n The number of values desired
 #' @param where Either \code{"head"} or \code{"tail"}.
-#' @return A sorted vector of length-n
+#' @return A sorted vector of length = n
 #' @author Ananda Mahto
 #' @note The \code{"tail"}  approach may not be consideraby faster than 
 #' the standard approach.
@@ -26,6 +26,7 @@
 sortEnds <- function(invec, n, where = "head") {
   invec <- switch(where, head = invec, tail = -invec,
                   stop("where must be 'head' or 'tail'"))
-  out <- sort(invec, partial = n)[seq_len(n)]
+  out <- sort(invec, partial = seq_len(n))[seq_len(n)]
   switch(where, head = out, tail = sort(-out))
 }
+NULL
