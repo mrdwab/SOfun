@@ -7,7 +7,7 @@
 \usage{
 ragged(indt, keys, blank = "")
 
-\method{print}{ragged}(x, ...)
+\method{print}{ragged}(x)
 }
 \arguments{
 \item{indt}{The input \code{data.frame} or \code{data.table}}

@@ -80,7 +80,7 @@ NULL
 #' @param x The object to be printed.
 #' @param \dots Not used.
 #' @aliases print.grouped_stem
-print.grouped_stem <- function(x, ...) {
+print.grouped_stem <- function(x) {
   cat(sprintf(sprintf("%%%ss | %%s", max(nchar(names(x)))+2), 
               names(x), unlist(x, use.names = FALSE)), sep = "\n")
 }
