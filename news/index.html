@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Read Clipboard Regardless of OS — readClip • SOfun</title>
+<title>Changelog • SOfun</title>
 
 
 <!-- jquery -->
@@ -39,10 +39,7 @@
 
 
 
-<meta property="og:title" content="Read Clipboard Regardless of OS — readClip" />
-<meta property="og:description" content="Different operating systems have different ways of handling the clipboard.
-Given the frequency with which text is copied to the clipboard to place in
-an answer on StackOverflow, this utility is provided." />
+<meta property="og:title" content="Changelog" />
 
 
 
@@ -61,7 +58,7 @@ an answer on StackOverflow, this utility is provided." />
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-topic">
+    <div class="container template-news">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -113,30 +110,45 @@ an answer on StackOverflow, this utility is provided." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Read Clipboard Regardless of OS</h1>
-    <small class="dont-index">Source: <a href='https://github.com/mrdwab/SOfun/blob/master/R/utils.R'><code>R/utils.R</code></a></small>
-    <div class="hidden name"><code>readClip.Rd</code></div>
+      <h1 data-toc-skip>Changelog <small></small></h1>
+      <small>Source: <a href='https://github.com/mrdwab/SOfun/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div class="ref-description">
-    <p>Different operating systems have different ways of handling the clipboard.
-Given the frequency with which text is copied to the clipboard to place in
-an answer on StackOverflow, this utility is provided.</p>
-    </div>
-
-    <pre class="usage"><span class='fu'>readClip</span>()</pre>
-
-
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>character string containing text on the clipboard.</p>
-
+    <div id="sofun-175" class="section level1">
+<h1 class="page-header" data-toc-text="1.75">
+<a href="#sofun-175" class="anchor"></a>SOfun 1.75</h1>
+<p>Not really sure whether this package warrants a NEWS section, so maybe I’ll just use this for any major changes.</p>
+<div id="functions-that-have-disappeared" class="section level2">
+<h2 class="hasAnchor">
+<a href="#functions-that-have-disappeared" class="anchor"></a>Functions that have disappeared</h2>
+<p>Sometimes functoins disappear for a good reason. Here are some that have gone missing.</p>
+<ol>
+<li>
+<s><code>appendMe</code>: Like <code><a href="https://rdrr.io/r/base/cbind.html">rbind()</a></code> but adds the source in the process.</s> Just use <code>rbindlist</code> from “data.table” with the <code>idcol</code> argument instead. Much better….</li>
+<li>
+<s><code>concat.split.DT</code>: Work in progress on an <code>fread()</code> approach to <code>concat.split()</code> from “splitstackshape”.</s> Now part of “splitstackshape” (since V1.4.0 and above).</li>
+<li>
+<s><code>expandRows</code>: Expand the rows of a <code>data.frame</code> by a column in the <code>data.frame</code> or by a specified vector.</s> Now a part of “splitstackshape”.</li>
+</ol>
+</div>
+<div id="functions-that-arent-really-missing" class="section level2">
+<h2 class="hasAnchor">
+<a href="#functions-that-arent-really-missing" class="anchor"></a>Functions that aren’t really missing</h2>
+<ol>
+<li>
+<a href="../reference/ftable2dt.html"><s><code>ftable2df</code></s> <code>ftable2dt</code></a>: Converts the output of <code><a href="https://rdrr.io/r/stats/ftable.html">ftable()</a></code> to a <code>data.table</code>. <em>NOTE: Changed from <code>data.frame</code> to <code>data.table</code>.</em>
+</li>
+</ol>
+</div>
+</div>
   </div>
+
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
     </nav>
   </div>
+
 </div>
 
 
