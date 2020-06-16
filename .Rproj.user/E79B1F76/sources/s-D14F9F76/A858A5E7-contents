@@ -1,7 +1,5 @@
 # SOfun
 
-Websi
-
 Functions I've written as answers to R questions on Stack Overflow. Destined to be the most important R package you have ever loaded in your R session. 
 
 ## Installation
