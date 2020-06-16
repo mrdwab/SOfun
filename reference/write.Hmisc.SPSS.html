@@ -179,9 +179,9 @@ and a data file that can be used with SPSS</p>
 #&gt; 5  5      0                  0                        E
 #&gt; 6  6      5             Nurses                        F</div><div class='input'>
 <span class='kw'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/getwd.html'>setwd</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/tempfile.html'>tempdir</a></span>())
-<span class='fu'><a href='https://rdrr.io/r/base/list.files.html'>list.files</a></span>()</div><div class='output co'>#&gt; [1] "downlit"            "file84311f5ddc1"    "file84331e73336"   
-#&gt; [4] "file84341d337d2"    "file8434fd2b5c.txt" "file84369635ad5"   
-#&gt; [7] "file843929a793"     "file843db8a898"    </div><div class='input'><span class='fu'>write.Hmisc.SPSS</span>(<span class='kw'>df</span>, <span class='st'>"df.sav"</span>, <span class='st'>"df.sps"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: some variable names were abbreviated</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/readLines.html'>readLines</a></span>(<span class='st'>"df.sav"</span>), sep = <span class='st'>"\n"</span>)</div><div class='output co'>#&gt; 1 1 "Optometrists" "A"
+<span class='fu'><a href='https://rdrr.io/r/base/list.files.html'>list.files</a></span>()</div><div class='output co'>#&gt; [1] "downlit"             "file84b1c842e3d"     "file84b249dad75"    
+#&gt; [4] "file84b529b25cf"     "file84b5a9b61af.txt" "file84b65bcb4e"     
+#&gt; [7] "file84b74807124"     "file84bf2a56a2"     </div><div class='input'><span class='fu'>write.Hmisc.SPSS</span>(<span class='kw'>df</span>, <span class='st'>"df.sav"</span>, <span class='st'>"df.sps"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: some variable names were abbreviated</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/readLines.html'>readLines</a></span>(<span class='st'>"df.sav"</span>), sep = <span class='st'>"\n"</span>)</div><div class='output co'>#&gt; 1 1 "Optometrists" "A"
 #&gt; 2 5 "Nurses" "B"
 #&gt; 3 4 "Financial analysts" "C"
 #&gt; 4 NA "&lt;NA&gt;" "D"
