@@ -19,5 +19,5 @@ Imports: Hmisc,
     XML,
     utils
 Suggests: reshape2,
-    ggplot2
+    ggplot2 
 Encoding: UTF-8

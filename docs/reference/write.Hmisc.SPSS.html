@@ -91,7 +91,12 @@ tries to address that." />
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/mrdwab/SOfun/">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -106,7 +111,7 @@ tries to address that." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Write an Hmisc data.frame with labels to SPSS</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/mrdwab/SOfun/blob/master/R/write.Hmisc.SPSS.R'><code>R/write.Hmisc.SPSS.R</code></a></small>
     <div class="hidden name"><code>write.Hmisc.SPSS.Rd</code></div>
     </div>
 
@@ -174,9 +179,9 @@ and a data file that can be used with SPSS</p>
 #&gt; 5  5      0                  0                        E
 #&gt; 6  6      5             Nurses                        F</div><div class='input'>
 <span class='kw'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/getwd.html'>setwd</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/tempfile.html'>tempdir</a></span>())
-<span class='fu'><a href='https://rdrr.io/r/base/list.files.html'>list.files</a></span>()</div><div class='output co'>#&gt; [1] "downlit"               "file309ac1aedbe16"     "file309ac1c56aa80.txt"
-#&gt; [4] "file309ac1c9dcf95"     "file309ac37acbb09"     "file309ac65946798"    
-#&gt; [7] "file309ac72b4ca63.so"  "file309ac7c1f9de3"    </div><div class='input'><span class='fu'>write.Hmisc.SPSS</span>(<span class='kw'>df</span>, <span class='st'>"df.sav"</span>, <span class='st'>"df.sps"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: some variable names were abbreviated</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/readLines.html'>readLines</a></span>(<span class='st'>"df.sav"</span>), sep = <span class='st'>"\n"</span>)</div><div class='output co'>#&gt; 1 1 5 1
+<span class='fu'><a href='https://rdrr.io/r/base/list.files.html'>list.files</a></span>()</div><div class='output co'>#&gt; [1] "downlit"               "file319fc16432c76"     "file319fc3b9d3dcd"    
+#&gt; [4] "file319fc3ebc4d88"     "file319fc4a4a99ac.txt" "file319fc605f18f9.so" 
+#&gt; [7] "file319fc6d856bd6"     "file319fc7b5439df"    </div><div class='input'><span class='fu'>write.Hmisc.SPSS</span>(<span class='kw'>df</span>, <span class='st'>"df.sav"</span>, <span class='st'>"df.sps"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: some variable names were abbreviated</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/readLines.html'>readLines</a></span>(<span class='st'>"df.sav"</span>), sep = <span class='st'>"\n"</span>)</div><div class='output co'>#&gt; 1 1 5 1
 #&gt; 2 5 4 2
 #&gt; 3 4 3 3
 #&gt; 4 NA 1 4
