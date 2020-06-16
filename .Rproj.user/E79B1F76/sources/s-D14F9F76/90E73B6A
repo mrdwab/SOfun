@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592282414647.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "90E73B6A",
+    "lastKnownWriteTime" : 1592282414,
+    "last_content_update" : 1592282414,
+    "path" : "~/my_r_packages/SOfun/_pkgdown.yml",
+    "project_path" : "_pkgdown.yml",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "yaml"
+}

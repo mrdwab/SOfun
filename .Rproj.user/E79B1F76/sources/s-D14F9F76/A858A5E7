@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592200142500.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A858A5E7",
+    "lastKnownWriteTime" : 1592200210,
+    "last_content_update" : 1592200210059,
+    "path" : "~/my_r_packages/SOfun/README.md",
+    "project_path" : "README.md",
+    "properties" : {
+        "cursorPosition" : "49,118",
+        "scrollLine" : "44"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}
