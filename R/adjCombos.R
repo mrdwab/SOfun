@@ -13,8 +13,8 @@
 #' 
 #' @export adjCombos
 adjCombos <- function(invec) {
-  A <- lapply(2:(length(invec)-1), sequence)
-  B <- lapply(rev(vapply(A, length, 1L))-1, function(x) c(0, sequence(x)))
+  A <- lapply(2:(length(invec)-1L), sequence)
+  B <- lapply(rev(lengths(A))-1L, function(x) c(0, sequence(x)))
   unlist(lapply(seq_along(A), function(x) {
     lapply(B[[x]], function(y) invec[A[[x]]+y])
   }), recursive = FALSE, use.names = FALSE)
