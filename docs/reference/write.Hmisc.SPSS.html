@@ -74,7 +74,7 @@ tries to address that." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">SOfun</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.75</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.76</span>
       </span>
     </div>
 
@@ -182,9 +182,9 @@ and a data file that can be used with SPSS</p>
 #&gt; 5  5      0                  0                        E
 #&gt; 6  6      5             Nurses                        F</div><div class='input'>
 <span class='kw'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/getwd.html'>setwd</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/tempfile.html'>tempdir</a></span>())
-<span class='fu'><a href='https://rdrr.io/r/base/list.files.html'>list.files</a></span>()</div><div class='output co'>#&gt; [1] "downlit"               "file327db11de356c"     "file327db125c44bc"    
-#&gt; [4] "file327db500a0d65"     "file327db6fd40020.txt" "file327db73899243.so" 
-#&gt; [7] "file327db7df0ff0"      "file327dbd45e5b9"     </div><div class='input'><span class='fu'>write.Hmisc.SPSS</span>(<span class='kw'>df</span>, <span class='st'>"df.sav"</span>, <span class='st'>"df.sps"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: some variable names were abbreviated</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/readLines.html'>readLines</a></span>(<span class='st'>"df.sav"</span>), sep = <span class='st'>"\n"</span>)</div><div class='output co'>#&gt; 1 1 5 1
+<span class='fu'><a href='https://rdrr.io/r/base/list.files.html'>list.files</a></span>()</div><div class='output co'>#&gt; [1] "downlit"               "file94a4d33a1a23b"     "file94a4d3489d8c3.txt"
+#&gt; [4] "file94a4d3d5ed34e"     "file94a4d5bac2133"     "file94a4d69c633f3"    
+#&gt; [7] "file94a4d7178e5b"      "file94a4dc0e1ca6.so"  </div><div class='input'><span class='fu'>write.Hmisc.SPSS</span>(<span class='kw'>df</span>, <span class='st'>"df.sav"</span>, <span class='st'>"df.sps"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: some variable names were abbreviated</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/readLines.html'>readLines</a></span>(<span class='st'>"df.sav"</span>), sep = <span class='st'>"\n"</span>)</div><div class='output co'>#&gt; 1 1 5 1
 #&gt; 2 5 4 2
 #&gt; 3 4 3 3
 #&gt; 4 NA 1 4

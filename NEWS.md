@@ -1,3 +1,7 @@
+# SOfun 1.76
+
+Added `list_reduction` function.
+
 # SOfun 1.75
 
 Not really sure whether this package warrants a NEWS section, so maybe I'll just use this for any major changes.
