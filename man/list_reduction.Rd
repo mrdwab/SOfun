@@ -4,12 +4,18 @@
 \alias{list_reduction}
 \title{Successively Applies a Function at Each Index in a List}
 \usage{
-list_reduction(inlist, fun = intersect, flatten = FALSE, sorted = FALSE)
+list_reduction(
+  inlist,
+  FUN = intersect,
+  flatten = FALSE,
+  sorted = FALSE,
+  MoreArgs = NULL
+)
 }
 \arguments{
 \item{inlist}{The input \code{list}.}
 
-\item{fun}{The function to be applied. Note that the supplied function should be one
+\item{FUN}{The function to be applied. Note that the supplied function should be one
 that you would expect to have work with two or more \code{vectors} as the given arguments.
 Thus, you can expect \code{range} to work, but not \code{mean}.}
 
@@ -19,6 +25,9 @@ single value (for example, when using a function like \code{sum} or \code{max}).
 
 \item{sorted}{Logical. Should the values at each \code{list} index be sorted? Defaults
 to \code{FALSE}.}
+
+\item{MoreArgs}{A \code{list} of additional arguments to be passed to \code{FUN}. See
+\code{\link[base:mapply]{base::mapply()}} for more details.}
 }
 \value{
 A \code{list} (default) or a simple \code{vector} (if \code{flatten = TRUE}).
@@ -38,7 +47,7 @@ list_reduction(L, flatten = TRUE)
 set.seed(1)
 L2 <- replicate(3, replicate(3, sample(sample(20), sample(10), TRUE), FALSE), FALSE)
 list_reduction(L2)
-list_reduction(L2, sum)
+list_reduction(L2, sum, flatten = TRUE)
 list_reduction(L2, range)
 list_reduction(L2, union)
 list_reduction(L2, union, sorted = TRUE)
@@ -46,6 +55,9 @@ list_reduction(L2, union, sorted = TRUE)
 }
 \references{
 See: \url{https://stackoverflow.com/q/62454705/1270695}
+}
+\seealso{
+\code{\link[base:Reduce]{base::Reduce()}}, \code{\link[base:mapply]{base::mapply()}}
 }
 \author{
 Ananda Mahto

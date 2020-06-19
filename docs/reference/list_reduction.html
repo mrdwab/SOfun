@@ -122,7 +122,13 @@ at each index level in a list." />
 at each index level in a <code>list</code>.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>list_reduction</span>(<span class='kw'>inlist</span>, fun = <span class='kw'>intersect</span>, flatten = <span class='fl'>FALSE</span>, sorted = <span class='fl'>FALSE</span>)</pre>
+    <pre class="usage"><span class='fu'>list_reduction</span>(
+  <span class='kw'>inlist</span>,
+  FUN = <span class='kw'>intersect</span>,
+  flatten = <span class='fl'>FALSE</span>,
+  sorted = <span class='fl'>FALSE</span>,
+  MoreArgs = <span class='kw'>NULL</span>
+)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -132,7 +138,7 @@ at each index level in a <code>list</code>.</p>
       <td><p>The input <code>list</code>.</p></td>
     </tr>
     <tr>
-      <th>fun</th>
+      <th>FUN</th>
       <td><p>The function to be applied. Note that the supplied function should be one
 that you would expect to have work with two or more <code>vectors</code> as the given arguments.
 Thus, you can expect <code>range</code> to work, but not <code>mean</code>.</p></td>
@@ -148,6 +154,11 @@ single value (for example, when using a function like <code>sum</code> or <code>
       <td><p>Logical. Should the values at each <code>list</code> index be sorted? Defaults
 to <code>FALSE</code>.</p></td>
     </tr>
+    <tr>
+      <th>MoreArgs</th>
+      <td><p>A <code>list</code> of additional arguments to be passed to <code>FUN</code>. See
+<code><a href='https://rdrr.io/r/base/mapply.html'>base::mapply()</a></code> for more details.</p></td>
+    </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
@@ -156,6 +167,9 @@ to <code>FALSE</code>.</p></td>
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     <p>See: <a href='https://stackoverflow.com/q/62454705/1270695'>https://stackoverflow.com/q/62454705/1270695</a></p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p><code><a href='https://rdrr.io/r/base/funprog.html'>base::Reduce()</a></code>, <code><a href='https://rdrr.io/r/base/mapply.html'>base::mapply()</a></code></p></div>
     <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
 
     <p>Ananda Mahto</p>
@@ -184,15 +198,7 @@ to <code>FALSE</code>.</p></td>
 #&gt; 
 #&gt; [[3]]
 #&gt; [1] 4 5
-#&gt; </div><div class='input'><span class='fu'>list_reduction</span>(<span class='kw'>L2</span>, <span class='kw'>sum</span>)</div><div class='output co'>#&gt; [[1]]
-#&gt; [1] 192
-#&gt; 
-#&gt; [[2]]
-#&gt; [1] 184
-#&gt; 
-#&gt; [[3]]
-#&gt; [1] 259
-#&gt; </div><div class='input'><span class='fu'>list_reduction</span>(<span class='kw'>L2</span>, <span class='kw'>range</span>)</div><div class='output co'>#&gt; [[1]]
+#&gt; </div><div class='input'><span class='fu'>list_reduction</span>(<span class='kw'>L2</span>, <span class='kw'>sum</span>, flatten = <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; [1] 192 184 259</div><div class='input'><span class='fu'>list_reduction</span>(<span class='kw'>L2</span>, <span class='kw'>range</span>)</div><div class='output co'>#&gt; [[1]]
 #&gt; [1]  1 19
 #&gt; 
 #&gt; [[2]]
